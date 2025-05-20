@@ -15,8 +15,8 @@ model = SentenceTransformer('all-MiniLM-L6-v2')
 # Constants
 CHUNK_SIZE = 500
 CHUNK_OVERLAP = 50
-OUTPUT_FOLDER = Path("C:/Users/NX83SQ/GitHub/RAG/faiss_store")
-PDF_FOLDER = Path("C:/Users/NX83SQ/GitHub/RAG/IAMSAR_2022")
+OUTPUT_FOLDER = Path("C:/Users/NX83SQ/Documents/GitHub/RAG/faiss_store")
+PDF_FOLDER = Path("C:/Users/NX83SQ/Documents/GitHub/RAG/IAMSAR_2022")
 
 # Ensure output folder exists
 OUTPUT_FOLDER.mkdir(parents=True, exist_ok=True)
