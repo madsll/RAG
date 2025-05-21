@@ -33,6 +33,26 @@ def generate_response(query):
     )
 
     prompt = f"""You are a helpful assistant supporting a Search and Rescue (SAR) operator. Use the provided context to answer the operator's question as accurately and concisely as possible.
+Here is an example of how the output should be structured:
+User Query:
+A small yacht with 2 persons on board has been reported overdue. The last known position was 20 NM west of Bornholm, 6 hours ago. Winds are 25 knots from the west, sea state 4. What search pattern should be used?
+
+Expected Output:
+Situation Summary:
+- Overdue vessel, 2 POB, LKP 20 NM west of Bornholm, 6 hours ago.
+- Wind: 25 knots W, Sea State 4.
+
+Recommended Action:
+- Use an Expanding Square Search (SS) pattern centered on the estimated datum.
+- Assign a single SRU with good visibility and radar capability.
+
+Rationale:
+- The Expanding Square is ideal for a small search area with a known datum and a single SRU.
+- Sea state and wind suggest moderate drift; drift estimation should be calculated using leeway tables (IAMSAR Vol II, Section 4.3).
+
+Considerations:
+- Recalculate datum every 2 hours.
+- Monitor weather updates and adjust pattern spacing accordingly.
 
 Context:
 {context}
