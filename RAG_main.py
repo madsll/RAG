@@ -2,6 +2,8 @@ import faiss
 import json
 from sentence_transformers import SentenceTransformer
 import ollama
+import os
+import streamlit as st
 
 # Load FAISS index
 index = faiss.read_index("C:/Users/NX83SQ/Documents/GitHub/RAG/faiss_store/faiss_index.index")
@@ -19,12 +21,14 @@ def retrieve_context(query, k=5):
     results = []
     for i in indices[0]:
         item = metadata[i]
+        filename = os.path.basename(item["source"])  # Extract just the filename
         results.append({
             "text": item["text"],
-            "source": item["source"],
+            "source": filename,
             "page": item["page"]
         })
     return results
+
 
 def generate_response(query):
     context_docs = retrieve_context(query)
@@ -73,12 +77,31 @@ Answer:"""
     for doc in context_docs:
         print(f"- File: {doc['source']} | Page: {doc['page']}")
     
-    return answer
+    return answer, context
 
 
-
-# Example usageWhat is 
 if __name__ == "__main__":
-    user_query = input("Enter your question: ")
-    answer = generate_response(user_query)
-    print("\nAnswer:\n", answer)
+    st.set_page_config(layout="wide")
+
+    col1, col2 = st.columns(2)
+
+    with col2:
+        user_query = st.text_area("Prompt", height=200)
+
+        # Initialize session state for output_area
+        if "output_area" not in st.session_state:
+            st.session_state.output_area = ""
+
+        # Button logic
+        if st.button("Generate Answer"):
+            if user_query.strip():
+                # Call the LLM and store the result
+                st.session_state.output_area, context = generate_response(user_query)
+            else:
+                st.warning("Please enter a prompt.")
+
+        # Display the output area after the button
+        st.text_area("Output", height=200, value=st.session_state.output_area, disabled=True)
+
+    with col1:
+        st.text_area("Documents", value=context, height=475)             
