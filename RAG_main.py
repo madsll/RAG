@@ -1,5 +1,6 @@
 import faiss
 import json
+import re
 from sentence_transformers import SentenceTransformer
 import ollama
 import os
@@ -12,7 +13,11 @@ index = faiss.read_index("C:/Users/NX83SQ/Documents/GitHub/RAG/faiss_store/faiss
 with open("C:/Users/NX83SQ/Documents/GitHub/RAG/faiss_store/chunks_metadata.json", "r", encoding="utf-8") as f:
     metadata = json.load(f)
 
-# Load embedding model (must match the one used to build the index)
+# Load tools
+with open("C:/Users/NX83SQ/Documents/GitHub/RAG/tool_suggestions.json", "r", encoding="utf-8") as f:
+    tools = json.load(f)
+
+# Load embedding model
 embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
 
 def retrieve_context(query, k=5):
@@ -21,7 +26,7 @@ def retrieve_context(query, k=5):
     results = []
     for i in indices[0]:
         item = metadata[i]
-        filename = os.path.basename(item["source"])  # Extract just the filename
+        filename = os.path.basename(item["source"])
         results.append({
             "text": item["text"],
             "source": filename,
@@ -29,6 +34,11 @@ def retrieve_context(query, k=5):
         })
     return results
 
+def extract_tools_from_response(response_text):
+    match = re.search(r"Recommended Tools:\n(.*?)(?:\n\n|\Z)", response_text, re.DOTALL)
+    if match:
+        return match.group(1).strip()
+    return "No tools recommended."
 
 def generate_response(query):
     context_docs = retrieve_context(query)
@@ -36,50 +46,53 @@ def generate_response(query):
         f"[Source: {doc['source']} - Page {doc['page']}]\n{doc['text']}" for doc in context_docs
     )
 
-    prompt = f"""You are a helpful assistant supporting a Search and Rescue (SAR) operator. Use the provided context to answer the operator's question as accurately and concisely as possible.
-Here is an example of how the output should be structured:
-User Query:
-A small yacht with 2 persons on board has been reported overdue. The last known position was 20 NM west of Bornholm, 6 hours ago. Winds are 25 knots from the west, sea state 4. What search pattern should be used?
+    tool_descriptions = "\n".join(
+        f"- {tool['name']}: {tool['description']}" for tool in tools
+    )
 
-Expected Output:
+    prompt = f"""You are a helpful assistant supporting a Search and Rescue (SAR) operator. Use the provided context to answer the operator's question as accurately and concisely as possible.
+
+Available Tools:
+{tool_descriptions}
+
+Instructions:
+- Based on the context and the operator's query, identify which tools (if any) would be helpful.
+- List the recommended tools under "Recommended Tools" with a short justification for each.
+- Then provide your full answer to the query.
+
+Format your response like this:
+
+User Query:
+{query}
+
+Recommended Tools:
+- [Tool Name]: [Why it's relevant]
+- [Tool Name]: [Why it's relevant]
+
 Situation Summary:
-- Overdue vessel, 2 POB, LKP 20 NM west of Bornholm, 6 hours ago.
-- Wind: 25 knots W, Sea State 4.
+...
 
 Recommended Action:
-- Use an Expanding Square Search (SS) pattern centered on the estimated datum.
-- Assign a single SRU with good visibility and radar capability.
+...
 
 Rationale:
-- The Expanding Square is ideal for a small search area with a known datum and a single SRU.
-- Sea state and wind suggest moderate drift; drift estimation should be calculated using leeway tables (IAMSAR Vol II, Section 4.3).
+...
 
 Considerations:
-- Recalculate datum every 2 hours.
-- Monitor weather updates and adjust pattern spacing accordingly.
+...
 
 Context:
 {context}
-
-Operator's Query:
-{user_query}
 
 Answer:"""
 
     response = ollama.chat(model="llama3.1:70b", messages=[{"role": "user", "content": prompt}])
     answer = response["message"]["content"]
+    tool_suggestions = extract_tools_from_response(answer)
 
-    # Print the answer
-    # print("\nAnswer:\n", answer)
+    return answer, context, tool_suggestions
 
-    # Print the sources
-    print("\nSources:")
-    for doc in context_docs:
-        print(f"- File: {doc['source']} | Page: {doc['page']}")
-    
-    return answer, context
-
-
+# Streamlit UI
 if __name__ == "__main__":
     st.set_page_config(layout="wide")
 
@@ -88,20 +101,21 @@ if __name__ == "__main__":
     with col2:
         user_query = st.text_area("Prompt", height=200)
 
-        # Initialize session state for output_area
         if "output_area" not in st.session_state:
             st.session_state.output_area = ""
+        if "tool_suggestions" not in st.session_state:
+            st.session_state.tool_suggestions = ""
 
-        # Button logic
         if st.button("Generate Answer"):
             if user_query.strip():
-                # Call the LLM and store the result
-                st.session_state.output_area, context = generate_response(user_query)
+                answer, context, tool_suggestions = generate_response(user_query)
+                st.session_state.output_area = answer
+                st.session_state.tool_suggestions = tool_suggestions
+
+                with col1:
+                    st.text_area("Documents", value=context, height=475)
+
+                with col2:
+                    st.text_area("Recommended Tools", value=st.session_state.tool_suggestions, height=150)
             else:
                 st.warning("Please enter a prompt.")
-
-        # Display the output area after the button
-        st.text_area("Output", height=200, value=st.session_state.output_area, disabled=True)
-
-    with col1:
-        st.text_area("Documents", value=context, height=475)             
