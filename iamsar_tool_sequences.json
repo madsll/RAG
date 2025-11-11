@@ -1,0 +1,107 @@
+[
+  {
+    "scenario_id": "SITREP_001",
+    "incident_type": "Man overboard from a passenger ferry during dense fog.",
+    "tool_sequence": [
+      "tool_007",
+      "tool_010",
+      "tool_003"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_002",
+    "incident_type": "Crew member swept overboard from a cargo vessel during a storm.",
+    "tool_sequence": [
+      "tool_002",
+      "tool_001",
+      "tool_009"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_003",
+    "incident_type": "Man overboard from a yacht after slipping and sustaining head injury.",
+    "tool_sequence": [
+      "tool_011",
+      "tool_004",
+      "tool_005"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_004",
+    "incident_type": "Man overboard from a fishing vessel at night; several vessels in vicinity.",
+    "tool_sequence": [
+      "tool_007",
+      "tool_008",
+      "tool_006"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_005",
+    "incident_type": "Man overboard from a research vessel; drone deployed for search.",
+    "tool_sequence": [
+      "tool_012",
+      "tool_014",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_006",
+    "incident_type": "Cargo vessel taking on water after collision with another ship.",
+    "tool_sequence": [
+      "tool_009",
+      "tool_007",
+      "tool_008",
+      "tool_001"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_007",
+    "incident_type": "Fishing trawler flooding due to hull breach during storm.",
+    "tool_sequence": [
+      "tool_002",
+      "tool_003",
+      "tool_015",
+      "tool_010"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_008",
+    "incident_type": "Passenger ferry sinking after uncontrolled fire caused flooding.",
+    "tool_sequence": [
+      "tool_014",
+      "tool_011",
+      "tool_016",
+      "tool_007"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_009",
+    "incident_type": "Fire in the engine room of a cargo vessel, risk of explosion due to fuel tanks.",
+    "tool_sequence": [
+      "tool_008",
+      "tool_009",
+      "tool_011",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_010",
+    "incident_type": "Fire in galley spreading to passenger areas; toxic smoke risk.",
+    "tool_sequence": [
+      "tool_007",
+      "tool_008",
+      "tool_011",
+      "tool_015"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_011",
+    "incident_type": "Fire in cargo hold with hazardous materials; risk of explosion.",
+    "tool_sequence": [
+      "tool_003",
+      "tool_014",
+      "tool_009",
+      "tool_016"
+    ]
+  }
+]
