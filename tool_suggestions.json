@@ -2,41 +2,16 @@
   {
     "name": "search_pattern_map",
     "description": "Plots the search pattern onto a map. Call this function whenever appropriate.",
-<<<<<<< HEAD
 	"too_id": "tool_001",
     "parameters": {
       "location": { "type": "string", "description": "Commence search point of the search.", "required": true },
       "search_pattern": { "type": "string", "description": "Search pattern to be used.", "required": true },
       "track_spacing": { "type": "float", "description": "Spacing of the search pattern.", "required": false },
       "output_format": { "type": "string", "description": "Desired output format.", "required": false }
-=======
-    "parameters": {
-      "location": {
-        "type": "string",
-        "description": "Commence search point of the search.",
-        "required": true
-      },
-      "search_pattern": {
-        "type": "string",
-        "description": "Search pattern to be used.",
-        "required": true
-      },
-      "track_spacing": {
-        "type": "float",
-        "description": "Spacing of the search pattern.",
-        "required": false
-      },
-      "output_format": {
-        "type": "string",
-        "description": "Desired output format.",
-        "required": false
-      }
->>>>>>> 0aa3178a6a7c8cd24f7fdf9bd687c2309fcd1308
     }
   },
   {
     "name": "survivor_status_calculation",
-<<<<<<< HEAD
     "description": "Calculates the estimated survival time of a survivor based on environmental conditions.",
 	"too_id": "tool_002",
     "parameters": {
@@ -45,112 +20,37 @@
       "sea_state": { "type": "string", "description": "Current sea state.", "required": true },
       "survivor_condition": { "type": "string", "description": "Initial condition of the survivor (e.g., healthy, injured).", "required": false },
       "additional_factors": { "type": "string", "description": "Additional factors that may impact the survival time, such as dangerous animals.", "required": false }
-=======
-    "description": "Calculates the estimated survival time of a survivor based on environmental conditions. Call this function whenever appropriate.",
-    "parameters": {
-      "water_temperature": {
-        "type": "float",
-        "description": "Water temperature in degrees Celsius.",
-        "required": true
-      },
-      "air_temperature": {
-        "type": "float",
-        "description": "Air temperature in degrees Celsius.",
-        "required": true
-      },
-      "sea_state": {
-        "type": "string",
-        "description": "Current sea state.",
-        "required": true
-      },
-      "survivor_condition": {
-        "type": "string",
-        "description": "Initial condition of the survivor (e.g., healthy, injured).",
-        "required": false
-      },
-      "additional_factors": {
-        "type": "string",
-        "description": "Additional factors that may impact the survival time, such as dangerous animals.",
-        "required": false
-      }
->>>>>>> 0aa3178a6a7c8cd24f7fdf9bd687c2309fcd1308
     }
   },
   {
     "name": "weather_forecast",
-<<<<<<< HEAD
     "description": "Generates a weather forecast for search and rescue operations.",
 	"too_id": "tool_003",
     "parameters": {
       "location": { "type": "string", "description": "Location of the search area.", "required": true },
       "forecast_duration": { "type": "float", "description": "Duration of the forecast in hours.", "required": true }
-=======
-    "description": "Generates a weather forecast for search and rescue operations. Call this function whenever appropriate.",
-    "parameters": {
-      "location": {
-        "type": "string",
-        "description": "Location of the search area.",
-        "required": true
-      },
-      "forecast_duration": {
-        "type": "float",
-        "description": "Duration of the forecast in hours.",
-        "required": true
-      }
->>>>>>> 0aa3178a6a7c8cd24f7fdf9bd687c2309fcd1308
     }
   },
   {
     "name": "survivor_location_calculation",
-<<<<<<< HEAD
     "description": "Calculates the location of a survivor based on last known position and drift.",
 	"too_id": "tool_004",
     "parameters": {
       "last_known_position": { "type": "string", "description": "Last known position of the survivor (e.g., latitude, longitude).", "required": true },
       "drift_speed": { "type": "float", "description": "Speed of the drift in knots.", "required": true },
       "drift_direction": { "type": "string", "description": "Direction of the drift (e.g., N, S, E, W).", "required": true }
-=======
-    "description": "Calculates the location of a survivor based on last known position and drift. Call this function whenever appropriate.",
-    "parameters": {
-      "last_known_position": {
-        "type": "string",
-        "description": "Last known position of the survivor (e.g., latitude, longitude).",
-        "required": true
-      },
-      "drift_speed": {
-        "type": "float",
-        "description": "Speed of the drift in knots.",
-        "required": true
-      },
-      "drift_direction": {
-        "type": "string",
-        "description": "Direction of the drift (e.g., N, S, E, W).",
-        "required": true
-      }
->>>>>>> 0aa3178a6a7c8cd24f7fdf9bd687c2309fcd1308
     }
   },
   {
     "name": "sunset",
-<<<<<<< HEAD
     "description": "Estimates the local time the sun sets.",
 	"too_id": "tool_005",
     "parameters": {
       "position": { "type": "string", "description": "Estimated position of the survivor (e.g., latitude, longitude).", "required": true }
-=======
-    "description": "Estimates the local time the sun sets. Call this function whenever appropriate.",
-    "parameters": {
-      "position": {
-        "type": "string",
-        "description": "Estimated position of the survivor (e.g., latitude, longitude).",
-        "required": true
-      }
->>>>>>> 0aa3178a6a7c8cd24f7fdf9bd687c2309fcd1308
     }
   },
   {
     "name": "sunrise",
-<<<<<<< HEAD
     "description": "Estimates the local time the sun rises.",
 	"too_id": "tool_006",
     "parameters": {
@@ -252,15 +152,3 @@
     }
   }
 ]
-=======
-    "description": "Estimates the local time the sun rises. Call this function whenever appropriate.",
-    "parameters": {
-      "position": {
-        "type": "string",
-        "description": "Estimated position of the survivor (e.g., latitude, longitude).",
-        "required": true
-      }
-    }
-  }
-]
->>>>>>> 0aa3178a6a7c8cd24f7fdf9bd687c2309fcd1308
