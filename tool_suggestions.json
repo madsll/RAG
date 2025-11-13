@@ -2,7 +2,7 @@
   {
     "name": "search_pattern_map",
     "description": "Plots the search pattern onto a map. Call this function whenever appropriate.",
-	"too_id": "tool_001",
+	  "tool_id": "tool_001",
     "parameters": {
       "location": { "type": "string", "description": "Commence search point of the search.", "required": true },
       "search_pattern": { "type": "string", "description": "Search pattern to be used.", "required": true },
@@ -13,19 +13,19 @@
   {
     "name": "survivor_status_calculation",
     "description": "Calculates the estimated survival time of a survivor based on environmental conditions.",
-	"too_id": "tool_002",
+	  "tool_id": "tool_002",
     "parameters": {
       "water_temperature": { "type": "float", "description": "Water temperature in degrees Celsius.", "required": true },
       "air_temperature": { "type": "float", "description": "Air temperature in degrees Celsius.", "required": true },
       "sea_state": { "type": "string", "description": "Current sea state.", "required": true },
       "survivor_condition": { "type": "string", "description": "Initial condition of the survivor (e.g., healthy, injured).", "required": false },
-      "additional_factors": { "type": "string", "description": "Additional factors that may impact the survival time, such as dangerous animals.", "required": false }
+      "additional_factors": { "type": "string", "description": "Additional factors that may impact the survival time", "required": false }
     }
   },
   {
     "name": "weather_forecast",
     "description": "Generates a weather forecast for search and rescue operations.",
-	"too_id": "tool_003",
+	  "tool_id": "tool_003",
     "parameters": {
       "location": { "type": "string", "description": "Location of the search area.", "required": true },
       "forecast_duration": { "type": "float", "description": "Duration of the forecast in hours.", "required": true }
@@ -34,7 +34,7 @@
   {
     "name": "survivor_location_calculation",
     "description": "Calculates the location of a survivor based on last known position and drift.",
-	"too_id": "tool_004",
+	  "tool_id": "tool_004",
     "parameters": {
       "last_known_position": { "type": "string", "description": "Last known position of the survivor (e.g., latitude, longitude).", "required": true },
       "drift_speed": { "type": "float", "description": "Speed of the drift in knots.", "required": true },
@@ -44,7 +44,7 @@
   {
     "name": "sunset",
     "description": "Estimates the local time the sun sets.",
-	"too_id": "tool_005",
+	  "tool_id": "tool_005",
     "parameters": {
       "position": { "type": "string", "description": "Estimated position of the survivor (e.g., latitude, longitude).", "required": true }
     }
@@ -52,7 +52,7 @@
   {
     "name": "sunrise",
     "description": "Estimates the local time the sun rises.",
-	"too_id": "tool_006",
+	  "tool_id": "tool_006",
     "parameters": {
       "position": { "type": "string", "description": "Estimated position of the survivor (e.g., latitude, longitude).", "required": true }
     }
@@ -60,7 +60,7 @@
   {
     "name": "ais_vessel_tracking",
     "description": "Retrieves real-time AIS data for nearby vessels to assist coordination and identify potential rescuers.",
-	"too_id": "tool_007",
+	  "tool_id": "tool_007",
     "parameters": {
       "area": { "type": "string", "description": "Geographic area to query for AIS data.", "required": true },
       "time_window": { "type": "float", "description": "Time window in hours for historical vessel positions.", "required": false }
@@ -69,7 +69,7 @@
   {
     "name": "emergency_communication_relay",
     "description": "Sends emergency messages to relevant authorities or nearby vessels.",
-	"too_id": "tool_008",
+	  "tool_id": "tool_008",
     "parameters": {
       "message": { "type": "string", "description": "Content of the emergency message.", "required": true },
       "recipient": { "type": "string", "description": "Target recipient (e.g., coast guard, nearby vessel).", "required": true }
@@ -78,7 +78,7 @@
   {
     "name": "sar_asset_availability",
     "description": "Checks availability and ETA of SAR assets (e.g., helicopters, rescue boats).",
-	"too_id": "tool_009",
+	  "tool_id": "tool_009",
     "parameters": {
       "location": { "type": "string", "description": "Location where assistance is needed.", "required": true },
       "asset_type": { "type": "string", "description": "Type of asset (e.g., helicopter, fast rescue craft).", "required": false }
@@ -87,7 +87,7 @@
   {
     "name": "detection_probability_estimator",
     "description": "Estimates the probability of detecting a survivor based on search pattern, visibility, and sea state.",
-	"too_id": "tool_010",
+	  "tool_id": "tool_010",
     "parameters": {
       "search_pattern": { "type": "string", "description": "Search pattern used.", "required": true },
       "visibility": { "type": "float", "description": "Visibility in nautical miles.", "required": true },
@@ -97,7 +97,7 @@
   {
     "name": "medical_triage_advisor",
     "description": "Provides triage recommendations based on survivor condition and available resources.",
-	"too_id": "tool_011",
+	  "tool_id": "tool_011",
     "parameters": {
       "survivor_condition": { "type": "string", "description": "Condition of the survivor (e.g., hypothermia, bleeding).", "required": true },
       "available_resources": { "type": "string", "description": "Medical resources available on scene.", "required": false }
@@ -106,7 +106,7 @@
   {
     "name": "visual_feed_analysis",
     "description": "Analyzes live drone or vessel camera feeds to detect signs of survivors or debris.",
-	"too_id": "tool_012",
+	  "tool_id": "tool_012",
     "parameters": {
       "feed_url": { "type": "string", "description": "URL or identifier of the visual feed.", "required": true },
       "analysis_type": { "type": "string", "description": "Type of analysis (e.g., survivor detection, debris spotting).", "required": true }
@@ -115,7 +115,7 @@
   {
     "name": "fuel_consumption_estimator",
     "description": "Estimates fuel usage for SAR vessels based on route and speed.",
-	"too_id": "tool_013",
+	  "tool_id": "tool_013",
     "parameters": {
       "vessel_type": { "type": "string", "description": "Type of vessel (e.g., RIB, cutter).", "required": true },
       "route_distance": { "type": "float", "description": "Distance of the route in nautical miles.", "required": true },
@@ -125,7 +125,7 @@
   {
     "name": "search_area_prioritization",
     "description": "Ranks search areas based on likelihood of survivor presence and environmental conditions.",
-	"too_id": "tool_014",
+	  "tool_id": "tool_014",
     "parameters": {
       "areas": { "type": "array", "description": "List of areas with coordinates and metadata.", "required": true },
       "criteria": { "type": "string", "description": "Prioritization criteria (e.g., drift model, last known sightings).", "required": true }
@@ -134,7 +134,7 @@
   {
     "name": "sar_mission_timeline",
     "description": "Generates a timeline for SAR operations including asset deployment, search phases, and recovery.",
-	"too_id": "tool_015",
+	  "tool_id": "tool_015",
     "parameters": {
       "start_time": { "type": "string", "description": "Start time of the mission.", "required": true },
       "assets": { "type": "array", "description": "List of SAR assets involved.", "required": true },
@@ -144,7 +144,7 @@
   {
     "name": "incident_report_generator",
     "description": "Creates a structured report of the SAR incident for documentation and review.",
-	"too_id": "tool_016",
+	  "tool_id": "tool_016",
     "parameters": {
       "incident_details": { "type": "string", "description": "Narrative or structured data about the incident.", "required": true },
       "search_summary": { "type": "string", "description": "Summary of search efforts and outcomes.", "required": true },
