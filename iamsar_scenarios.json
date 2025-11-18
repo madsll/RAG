@@ -1,0 +1,211 @@
+[
+  {
+    "scenario_id": "SITREP_001",
+    "message_type": "SITREP",
+    "incident_type": "Man overboard from a passenger ferry during dense fog.",
+    "description": "Man overboard from a passenger ferry during dense fog.",
+    "position": "58\u00b000'12.5\"N 10\u00b015'30.2\"E (Skagerrak, near shipping lane)",
+    "time": null,
+    "persons_involved": "1 person missing, last seen at 06:45 local time.",
+    "vessel": null,
+    "conditions": {
+      "visibility": "< 0.5 nm",
+      "sea_state": null,
+      "air_temp": "8",
+      "water_temp": "10.",
+      "wind": null
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_002",
+    "message_type": "SITREP",
+    "incident_type": "Crew member swept overboard from a cargo vessel during a storm.",
+    "description": "Crew member swept overboard from a cargo vessel during a storm.",
+    "position": "56\u00b045'00.0\"N 8\u00b030'00.0\"E (North Sea, 40 NM offshore)",
+    "time": null,
+    "persons_involved": "1 person missing, last seen at 02:10 local time.",
+    "vessel": null,
+    "conditions": {
+      "visibility": null,
+      "sea_state": "6",
+      "air_temp": "5",
+      "water_temp": "9.",
+      "wind": "40 knots"
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_003",
+    "message_type": "SITREP",
+    "incident_type": "Man overboard from a yacht after slipping and sustaining head injury.",
+    "description": "Man overboard from a yacht after slipping and sustaining head injury.",
+    "position": "57\u00b030'00.0\"N 9\u00b000'00.0\"E (North Sea, near oil platform)",
+    "time": null,
+    "persons_involved": "1 person missing, unconscious when last seen.",
+    "vessel": null,
+    "conditions": {
+      "visibility": null,
+      "sea_state": null,
+      "air_temp": "12",
+      "water_temp": "11.",
+      "wind": null
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_004",
+    "message_type": "SITREP",
+    "incident_type": "Man overboard from a fishing vessel at night; several vessels in vicinity.",
+    "description": "Man overboard from a fishing vessel at night; several vessels in vicinity.",
+    "position": "57\u00b055'00.0\"N 9\u00b020'00.0\"E (North Sea)",
+    "time": null,
+    "persons_involved": "1 person missing, last seen at 23:30 local time.",
+    "vessel": null,
+    "conditions": {
+      "visibility": null,
+      "sea_state": null,
+      "air_temp": "7",
+      "water_temp": "9.",
+      "wind": null
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_005",
+    "message_type": "SITREP",
+    "incident_type": "Man overboard from a research vessel; drone deployed for search.",
+    "description": "Man overboard from a research vessel; drone deployed for search.",
+    "position": "58\u00b010'00.0\"N 10\u00b005'00.0\"E (Skagerrak)",
+    "time": null,
+    "persons_involved": "1 person missing, last seen at 14:20 local time.",
+    "vessel": null,
+    "conditions": {
+      "visibility": null,
+      "sea_state": null,
+      "air_temp": "10",
+      "water_temp": "11.",
+      "wind": null
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_006",
+    "message_type": "SITREP",
+    "incident_type": "Cargo vessel taking on water after collision with another ship.",
+    "description": "Cargo vessel taking on water after collision with another ship.",
+    "position": "57\u00b045'30.0\"N 8\u00b055'20.0\"E (North Sea, near major shipping route)",
+    "time": null,
+    "persons_involved": "Crew of 18, all accounted for but preparing to abandon ship.",
+    "vessel": null,
+    "conditions": {
+      "visibility": "moderate",
+      "sea_state": "4",
+      "air_temp": "9",
+      "water_temp": "10. epirb activated.",
+      "wind": null
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_007",
+    "message_type": "SITREP",
+    "incident_type": "Fishing trawler flooding due to hull breach during storm.",
+    "description": "Fishing trawler flooding due to hull breach during storm.",
+    "position": "56\u00b050'00.0\"N 9\u00b020'00.0\"E (North Sea, 50 NM offshore)",
+    "time": null,
+    "persons_involved": "Crew of 12, some already in life rafts.",
+    "vessel": null,
+    "conditions": {
+      "visibility": null,
+      "sea_state": "7",
+      "air_temp": "4",
+      "water_temp": "8. epirb signal received.",
+      "wind": "45 knots"
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_008",
+    "message_type": "SITREP",
+    "incident_type": "Passenger ferry sinking after uncontrolled fire caused flooding.",
+    "description": "Passenger ferry sinking after uncontrolled fire caused flooding.",
+    "position": "58\u00b005'00.0\"N 10\u00b010'00.0\"E (Skagerrak)",
+    "time": null,
+    "persons_involved": "Crew of 20 and 80 passengers; multiple life rafts deployed.",
+    "vessel": null,
+    "conditions": {
+      "visibility": null,
+      "sea_state": null,
+      "air_temp": "11",
+      "water_temp": "10. epirb and distress call sent.",
+      "wind": null
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_009",
+    "message_type": "SITREP",
+    "incident_type": "Fire in the engine room of a cargo vessel, risk of explosion due to fuel tanks.",
+    "description": "Fire in the engine room of a cargo vessel, risk of explosion due to fuel tanks.",
+    "position": "57\u00b050'00.0\"N 9\u00b015'00.0\"E (North Sea, near shipping lane)",
+    "time": null,
+    "persons_involved": "Crew of 20, all onboard, some exposed to smoke.",
+    "vessel": null,
+    "conditions": {
+      "visibility": null,
+      "sea_state": null,
+      "air_temp": "10",
+      "water_temp": "11. vessel still afloat but losing propulsion.",
+      "wind": null
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_010",
+    "message_type": "SITREP",
+    "incident_type": "Fire in galley spreading to passenger areas; toxic smoke risk.",
+    "description": "Fire in galley spreading to passenger areas; toxic smoke risk.",
+    "position": "58\u00b005'00.0\"N 10\u00b005'00.0\"E (Skagerrak)",
+    "time": null,
+    "persons_involved": "Crew of 25 and 150 passengers; evacuation underway.",
+    "vessel": null,
+    "conditions": {
+      "visibility": null,
+      "sea_state": null,
+      "air_temp": "12",
+      "water_temp": "10. epirb activated.",
+      "wind": null
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  },
+  {
+    "scenario_id": "SITREP_011",
+    "message_type": "SITREP",
+    "incident_type": "Fire in cargo hold with hazardous materials; risk of explosion.",
+    "description": "Fire in cargo hold with hazardous materials; risk of explosion.",
+    "position": "56\u00b055'00.0\"N 8\u00b045'00.0\"E (North Sea, 70 NM offshore)",
+    "time": null,
+    "persons_involved": "Crew of 22, preparing to abandon ship.",
+    "vessel": null,
+    "conditions": {
+      "visibility": null,
+      "sea_state": "5",
+      "air_temp": "8",
+      "water_temp": "9. epirb signal received.",
+      "wind": "25 knots"
+    },
+    "actions_taken": null,
+    "requested_assistance": null
+  }
+]
