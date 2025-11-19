@@ -1,91 +1,277 @@
 [
   {
     "scenario_id": "SITREP_001",
-    "incident_type": "Man overboard from a passenger ferry during dense fog.",
+    "incident_type": "Man overboard",
     "tool_sequence": [
       "tool_003",
-      "tool_002",
       "tool_004",
+      "tool_006",
       "tool_009",
-      "tool_001"
+      "tool_007",
+      "tool_014",
+      "tool_001",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
     ]
   },
   {
     "scenario_id": "SITREP_002",
-    "incident_type": "Crew member swept overboard from a cargo vessel during a storm.",
+    "incident_type": "Crew member swept overboard.",
+    "tool_sequence": [
+      "tool_003",
+      "tool_002",
+      "tool_004",
+      "tool_006",
+      "tool_009",
+      "tool_007",
+      "tool_014",
+      "tool_001",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_003",
+    "incident_type": "Unconscious man overboard from a yacht.",
+    "tool_sequence": [
+      "tool_011",
+      "tool_003",
+      "tool_009",
+      "tool_007",
+      "tool_014",
+      "tool_001",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_004",
+    "incident_type": "Man overboard from a fishing vessel.",
     "tool_sequence": [
       "tool_003",
       "tool_002",
       "tool_004",
       "tool_009",
-      "tool_001"
-    ]
-  },
-  {
-    "scenario_id": "SITREP_003",
-    "incident_type": "Man overboard from a yacht after slipping and sustaining head injury.",
-    "tool_sequence": [
-      "tool_011",
-      "tool_002",
-      "tool_004",
-      "tool_009",
-      "tool_001"
-    ]
-  },
-  {
-    "scenario_id": "SITREP_004",
-    "incident_type": "Man overboard from a fishing vessel at night; several vessels in vicinity.",
-    "tool_sequence": [
-      
+      "tool_007",
+      "tool_014",
+      "tool_001",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
     ]
   },
   {
     "scenario_id": "SITREP_005",
-    "incident_type": "Man overboard from a research vessel; drone deployed for search.",
+    "incident_type": "Man overboard from a research vessel.",
     "tool_sequence": [
-     
+      "tool_012",
+      "tool_002",
+      "tool_004",
+      "tool_009",
+      "tool_007",
+      "tool_014",
+      "tool_001",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
     ]
   },
   {
     "scenario_id": "SITREP_006",
     "incident_type": "Cargo vessel taking on water after collision with another ship.",
     "tool_sequence": [
-      
+      "tool_003",
+      "tool_002",
+      "tool_004",
+      "tool_009",
+      "tool_007",
+      "tool_014",
+      "tool_001",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
     ]
   },
   {
     "scenario_id": "SITREP_007",
-    "incident_type": "Fishing trawler flooding due to hull breach during storm.",
+    "incident_type": "Fishing trawler flooding due to hull breach.",
     "tool_sequence": [
-      
+      "tool_003",
+      "tool_002",
+      "tool_009",
+      "tool_007",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
     ]
   },
   {
     "scenario_id": "SITREP_008",
     "incident_type": "Passenger ferry sinking after uncontrolled fire caused flooding.",
     "tool_sequence": [
-    
+      "tool_002",
+      "tool_009",
+      "tool_007",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
     ]
   },
   {
     "scenario_id": "SITREP_009",
-    "incident_type": "Fire in the engine room of a cargo vessel, risk of explosion due to fuel tanks.",
+    "incident_type": "Fire in the engine room.",
     "tool_sequence": [
-      
+      "tool_011",
+      "tool_003",
+      "tool_004",
+      "tool_009",
+      "tool_007",
+      "tool_014",
+      "tool_001",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
     ]
   },
   {
     "scenario_id": "SITREP_010",
-    "incident_type": "Fire in galley spreading to passenger areas; toxic smoke risk.",
+    "incident_type": "Fire in galley of a passenger vessel.",
     "tool_sequence": [
-      
+      "tool_011",
+      "tool_003",
+      "tool_009",
+      "tool_007",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
     ]
   },
   {
     "scenario_id": "SITREP_011",
-    "incident_type": "Fire in cargo hold with hazardous materials; risk of explosion.",
+    "incident_type": "Fire in cargo hold.",
     "tool_sequence": [
-      
+      "tool_003",
+      "tool_002",
+      "tool_009",
+      "tool_007",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_012",
+    "incident_type": "Woman unconscious.",
+    "tool_sequence": [
+      "tool_011",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_013",
+    "incident_type": "EPIRB signal received.",
+    "tool_sequence": [
+      "tool_003",
+      "tool_002",
+      "tool_006",
+      "tool_009",
+      "tool_007",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_014",
+    "incident_type": "Crew members overboard from a cargo vessel during a storm.",
+    "tool_sequence": [
+      "tool_003",
+      "tool_002",
+      "tool_004",
+      "tool_005",
+      "tool_009",
+      "tool_007",
+      "tool_014",
+      "tool_001",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_015",
+    "incident_type": "Ship wreckage sighted.",
+    "tool_sequence": [
+      "tool_003",
+      "tool_005",
+      "tool_009",
+      "tool_007",
+      "tool_014",
+      "tool_001",
+      "tool_008",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_016",
+    "incident_type": "AIS man overboard signal received.",
+    "tool_sequence": [
+      "tool_007",
+      "tool_008",
+      "tool_003",
+      "tool_002",
+      "tool_004",
+      "tool_009",
+      "tool_014",
+      "tool_001",
+      "tool_010",
+      "tool_013",
+      "tool_015",
+      "tool_016"
+    ]
+  },
+  {
+    "scenario_id": "SITREP_017",
+    "incident_type": "Motor death on yatch.",
+    "tool_sequence": [
+      "tool_003",
+      "tool_007",
+      "tool_009",
+      "tool_008",
+      "tool_015",
+      "tool_016"
     ]
   }
 ]
