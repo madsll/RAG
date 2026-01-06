@@ -1,0 +1,522 @@
+[
+  {
+    "query": {
+      "scenario_id": "SITREP_001",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Man overboard.",
+      "description": "Man overboard from a passenger ferry during dense fog.",
+      "position": "58° 12'06\"N 10°30'03\"E (Skagerrak, near shipping lane)",
+      "time": "07:00",
+      "persons_involved": "1 person missing, last seen at 06:45 local time.",
+      "vessel": "Passenger ferry",
+      "conditions": {
+        "visibility": "0.5",
+        "sea_state": null,
+        "air_temp": "8",
+        "water_temp": "10",
+        "wind": null
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_001', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Man overboard.', 'description': 'Man overboard from a passenger ferry during dense fog.', 'position': '58° 12\\'06\"N 10°30\\'03\"E (Skagerrak, near shipping lane)', 'time': '07:00', 'persons_involved': '1 person missing, last seen at 06:45 local time.', 'vessel': 'Passenger ferry', 'conditions': {'visibility': '0.5', 'sea_state': None, 'air_temp': '8', 'water_temp': '10', 'wind': None}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: Plotting the search pattern onto a map is crucial in this situation to organize and visualize the search efforts.\n- tool_002: Calculating the estimated survival time of the survivor based on environmental conditions (water temperature) will help prioritize the rescue operations.\n- tool_004: Since the person was last seen at 06:45 local time, calculating their location based on drift will aid in pinpointing potential areas to search.\n- tool_007: Retrieving real-time AIS data for nearby vessels can assist in coordination and identifying potential rescuers or vessels that might have witnessed the incident.\n\nSituation Summary:\nA man has gone overboard from a passenger ferry during dense fog, creating a challenging rescue situation due to low visibility. The last known position of the person was at 06:45 local time.\n\nRecommended Action:\nImmediately initiate search operations using tool_001 and start calculating potential drift locations with tool_004. Use tool_002 to estimate survival times based on water temperature and other environmental factors, and utilize real-time AIS data from tool_007 to coordinate efforts and identify nearby vessels that could assist.\n\nRationale:\nGiven the urgency of the situation, quickly plotting a search pattern, estimating survival time, calculating drift locations, and coordinating with potential rescuers are all critical steps in attempting to rescue the person as soon as possible. The dense fog complicates visual searches, making these tools especially valuable for an organized response.\n\nConsiderations:\n- The low visibility due to dense fog severely hampers search efforts.\n- The incident occurred near a shipping lane, which might increase the risk of the survivor being struck by another vessel or complicate rescue operations with traffic.\n- Coordination with nearby vessels is crucial not only for potential assistance but also to alert them to the presence of a person in the water.\n\nContext:\nThis response follows guidelines and considerations laid out in IAMSAR manuals regarding distress situations, specifically man overboard incidents. It emphasizes the importance of immediate action, utilization of available data (such as weather conditions), and coordination with nearby vessels for assistance or awareness.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 269]\nAppendix D – Uncertainty phase data\nD-4 IAMSAR MANUAL VOLUME II (2022 EDITION)\nMan overboard (MOB) checklist\n1  Date/time of present position.\n2  Craft’s course/speed and destination.\n3  Date/time of man overboard position.\n4  Initial reporting source (parent agency, radio station, name/call sign of craft).\n5  Estimated water temperature.\n6  Person’s name, age, sex.\n7  Person’s physical condition and swimming capability.\n8  Person’s clothing amount and colour, including life preserver.\n\n[Source: IAMSAR-V3-2022.pdf - Page 36]\nF position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)\n – number and type of survival craft launched\n\n[Source: IAMSAR-V3-2022.pdf - Page 35]\nF call sign or other identification \n F MMSI (if the initial alert has been sent by DSC) \n F position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)\n\n[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard\n\n[Source: IAMSAR-V3-2022.pdf - Page 49]\nMan overboard\nSpecific situations are discussed below and general guidance is provided in \naction card “MOB Man overboard”.\nThree situations\nImmediate action\n F The person overboard is noticed from the bridge and action is taken \nimmediately.\nDelayed action\n F The person is reported to the bridge by an eyewitness and action is \ninitiated with some delay.\nPerson-missing action\n F The person is reported to the bridge as missing.\nVessel manoeuvres",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_002",
+      "tool_004",
+      "tool_007"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_002",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Crew member overboard from a cargo vessel during a storm.",
+      "description": "Crew member swept overboard from a cargo vessel during a storm.",
+      "position": "56°42'43\"N 7°00'40\"E (North Sea, 40 NM offshore)",
+      "time": "02:10",
+      "persons_involved": "1 person missing, last seen at 02:10 local time.",
+      "vessel": "Cargo vessel",
+      "conditions": {
+        "visibility": "1",
+        "sea_state": "6",
+        "air_temp": "5",
+        "water_temp": "9",
+        "wind": "40 knots"
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_002', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Crew member overboard from a cargo vessel during a storm.', 'description': 'Crew member swept overboard from a cargo vessel during a storm.', 'position': '56°42\\'43\"N 7°00\\'40\"E (North Sea, 40 NM offshore)', 'time': '02:10', 'persons_involved': '1 person missing, last seen at 02:10 local time.', 'vessel': 'Cargo vessel', 'conditions': {'visibility': '1', 'sea_state': '6', 'air_temp': '5', 'water_temp': '9', 'wind': '40 knots'}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_002: To estimate the survival time of the crew member in the water based on environmental conditions.\n- tool_004: To calculate the potential location of the survivor taking into account drift and last known position.\n- tool_007: To retrieve real-time AIS data for nearby vessels that could potentially assist in the rescue operations.\n- tool_008: To send emergency messages to relevant authorities or nearby vessels to coordinate assistance.\n- tool_009: To check the availability and ETA of SAR assets such as helicopters or rescue boats.\n\nSituation Summary:\nA crew member has been swept overboard from a cargo vessel during a storm. The situation is critical, with high winds, rough seas, and low visibility, making immediate rescue operations challenging. The missing person's last known position was at 02:10 local time, approximately 40 nautical miles offshore in the North Sea.\n\nRecommended Action:\nImmediately activate nearby SAR assets such as helicopters or rescue boats and coordinate their deployment based on availability and ETA (tool_009). Use real-time AIS data to identify and alert nearby vessels that could potentially assist in the rescue operations (tool_007).\n\nRationale:\nGiven the severe weather conditions, including strong winds and poor visibility, immediate action is crucial. The survivor's chances of survival depend significantly on how quickly help can arrive.\n\nConsiderations:\n- Survival time: Given the water temperature (9°C) and air temperature (5°C), the crew member's ability to survive in the water for an extended period is low.\n- Visibility: With a visibility of 1, spotting the survivor will be challenging, necessitating the use of tools like AIS data to coordinate vessel assistance.\n- Drift: The high wind speed (40 knots) and rough sea state (6) indicate significant potential drift, making it essential to calculate the probable location of the survivor using tool_004.\n\nContext:\nThe information provided aligns with the format required for a SITREP in a maritime distress situation. It includes critical details such as position, time, number of persons involved, vessel type, and environmental conditions, facilitating effective SAR operations planning.",
+    "context": "[Source: IAMSAR-V3-2022.pdf - Page 35]\nF call sign or other identification \n F MMSI (if the initial alert has been sent by DSC) \n F position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)\n\n[Source: IAMSAR-V3-2022.pdf - Page 36]\nF position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)\n – number and type of survival craft launched\n\n[Source: IAMSAR-V2-2022.pdf - Page 269]\nAppendix D – Uncertainty phase data\nD-4 IAMSAR MANUAL VOLUME II (2022 EDITION)\nMan overboard (MOB) checklist\n1  Date/time of present position.\n2  Craft’s course/speed and destination.\n3  Date/time of man overboard position.\n4  Initial reporting source (parent agency, radio station, name/call sign of craft).\n5  Estimated water temperature.\n6  Person’s name, age, sex.\n7  Person’s physical condition and swimming capability.\n8  Person’s clothing amount and colour, including life preserver.\n\n[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard\n\n[Source: IAMSAR-V2-2022.pdf - Page 314]\nDATE AND TIME (UTC or Local Date Time Group)\nFROM: (Originating RCC)\nTO:\nSAR SITREP (NUMBER) (To indicate nature of message and \ncompleteness of sequence of SITREPs \nconcerning the casualty)\nA. IDENTITY OF CASUALTY (Name/call sign, flag State)\nB. POSITION (Latitude/longitude)\nC. SITUATION (Type of message, e.g. distress/urgency; date/\ntime; nature of distress/urgency, e.g. fire, \ncollision, medico)\nD. NUMBER OF PERSONS\nE. ASSISTANCE REQUIRED\nF. COORDINATING RCC",
+    "tool_suggestions": [
+      "tool_002",
+      "tool_004",
+      "tool_007",
+      "tool_008",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_003",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Unconscious man overboard from a yacht.",
+      "description": "Man overboard from a yacht after slipping and sustaining head injury.",
+      "position": "57°27'45\"N 4°22'13\"E (North Sea, near oil platform)",
+      "time": "14:00",
+      "persons_involved": "1 person missing, unconscious when last seen.",
+      "vessel": "Yacht",
+      "conditions": {
+        "visibility": "9",
+        "sea_state": null,
+        "air_temp": "2",
+        "water_temp": null,
+        "wind": null
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_003', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Unconscious man overboard from a yacht.', 'description': 'Man overboard from a yacht after slipping and sustaining head injury.', 'position': '57°27\\'45\"N 4°22\\'13\"E (North Sea, near oil platform)', 'time': '14:00', 'persons_involved': '1 person missing, unconscious when last seen.', 'vessel': 'Yacht', 'conditions': {'visibility': '9', 'sea_state': None, 'air_temp': '2', 'water_temp': None, 'wind': None}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_004: Calculate the location of the survivor based on last known position and drift to aid in search efforts.\n- tool_002: Estimate the survival time of the survivor considering environmental conditions such as water temperature (if available) and air temperature.\n- tool_007: Retrieve real-time AIS data for nearby vessels to assist coordination and identify potential rescuers.\n- tool_008: Send emergency messages to relevant authorities or nearby vessels to request assistance.\n\nSituation Summary:\nAn unconscious man has gone overboard from a yacht in the North Sea, near an oil platform. The incident occurred at 14:00 with good visibility but unknown sea state and water temperature.\n\nRecommended Action:\nImmediately initiate search operations using tool_004 to estimate the survivor's location based on drift. Request nearby vessels for assistance via tool_008 and retrieve their AIS data using tool_007 for coordination. Additionally, use tool_002 to estimate the survival time of the survivor considering environmental conditions.\n\nRationale:\nThe key priority is locating the survivor as quickly as possible due to their unconscious state, which necessitates immediate action. The tools recommended will aid in coordinating a swift response by estimating the survivor's location, identifying potential rescuers, and assessing the urgency based on estimated survival time.\n\nConsiderations:\n- The lack of information about sea state and water temperature hinders a complete assessment of conditions. Efforts should be made to obtain this data if possible.\n- Coordination with nearby vessels is crucial for a timely response.\n- Given the survivor's unconscious condition, every minute counts in the search and rescue operation.\n\nContext:\nThis scenario aligns with the MOB (Man Overboard) checklist and guidance provided in IAMSAR manuals, emphasizing immediate action, delayed action, or person-missing action based on when the incident is reported. The recommended tools support these actions by enhancing situational awareness and facilitating a coordinated response.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 269]\nAppendix D – Uncertainty phase data\nD-4 IAMSAR MANUAL VOLUME II (2022 EDITION)\nMan overboard (MOB) checklist\n1  Date/time of present position.\n2  Craft’s course/speed and destination.\n3  Date/time of man overboard position.\n4  Initial reporting source (parent agency, radio station, name/call sign of craft).\n5  Estimated water temperature.\n6  Person’s name, age, sex.\n7  Person’s physical condition and swimming capability.\n8  Person’s clothing amount and colour, including life preserver.\n\n[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard\n\n[Source: IAMSAR-V3-2022.pdf - Page 49]\nMan overboard\nSpecific situations are discussed below and general guidance is provided in \naction card “MOB Man overboard”.\nThree situations\nImmediate action\n F The person overboard is noticed from the bridge and action is taken \nimmediately.\nDelayed action\n F The person is reported to the bridge by an eyewitness and action is \ninitiated with some delay.\nPerson-missing action\n F The person is reported to the bridge as missing.\nVessel manoeuvres\n\n[Source: IAMSAR-V3-2022.pdf - Page 50]\nIAMSAR MANUAL VOLUME III (2022 EDITION) 4-1\nMan overboard\nSpecific situations are discussed below and general guidance is provided in \naction card “MOB Man overboard”.\nThree situations\nImmediate action\n F The person overboard is noticed from the bridge and action is taken \nimmediately.\nDelayed action\n F The person is reported to the bridge by an eyewitness and action is \ninitiated with some delay.\nPerson-missing action\n F The person is reported to the bridge as missing.\nVessel manoeuvres\n\n[Source: IAMSAR-V3-2022.pdf - Page 49]\nInitial action\n• Mark and note position and time from GNSS.\n• Throw a life-ring over the side as close to the person as possible.\n• Sound three prolonged blasts of ship’s whistle; hail “man overboard”.",
+    "tool_suggestions": [
+      "tool_004",
+      "tool_002",
+      "tool_007",
+      "tool_008"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_004",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Man overboard from a fishing vessel.",
+      "description": "Man overboard from a fishing vessel at night; several vessels in vicinity.",
+      "position": "10°33'23\"N 101°14'32\"E (Gulf of Thailand)",
+      "time": "23:35",
+      "persons_involved": "1 person missing, last seen at 23:30 local time.",
+      "vessel": "Fishing vessel",
+      "conditions": {
+        "visibility": "3",
+        "sea_state": "3",
+        "air_temp": "20",
+        "water_temp": "18",
+        "wind": null
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_004', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Man overboard from a fishing vessel.', 'description': 'Man overboard from a fishing vessel at night; several vessels in vicinity.', 'position': '10°33\\'23\"N 101°14\\'32\"E (Gulf of Thailand)', 'time': '23:35', 'persons_involved': '1 person missing, last seen at 23:30 local time.', 'vessel': 'Fishing vessel', 'conditions': {'visibility': '3', 'sea_state': '3', 'air_temp': '20', 'water_temp': '18', 'wind': None}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_004: To calculate the location of the survivor based on last known position and drift.\n- tool_002: To estimate the survival time of the survivor based on environmental conditions such as water temperature (18°C).\n- tool_007: To retrieve real-time AIS data for nearby vessels to assist coordination and identify potential rescuers in the vicinity.\n- tool_010: To estimate the probability of detecting a survivor based on search pattern, visibility, and sea state.\n\nSituation Summary:\nA person has gone overboard from a fishing vessel at night. The incident occurred at 23:30 local time, and several vessels are nearby. The current position is known (10°33'23\"N 101°14'32\"E), but the survivor's exact location after drifting for some time is uncertain.\n\nRecommended Action:\nImmediately deploy search assets to the area and initiate a search pattern, taking into account the estimated drift of the survivor based on tool_004. Request nearby vessels with AIS capability to assist in the search and provide their ETA as per tool_007. Additionally, assess the survivability of the person overboard using tool_002.\n\nRationale:\nGiven the nighttime conditions and uncertainty of the survivor's exact location due to drifting, precise calculations are crucial for effective rescue operations. The use of tools like tool_004, tool_002, and tool_010 will enhance the chances of locating the survivor quickly by providing valuable information on their potential whereabouts and survivability.\n\nConsiderations:\nEnsure that all nearby vessels are alerted about the distress situation using AIS and other means to maximize the search effort. Coordination among vessels is key for a successful rescue operation in such conditions.\n\nContext:\nThe scenario falls under \"Person-missing action\" as per IAMSAR-V3-2022.pdf (Page 50), where immediate marking of the position, throwing a life-ring, sounding three prolonged blasts of ship's whistle, and hailing “man overboard” are initial actions recommended. However, given that our analysis starts after these initial steps have presumably been taken, the focus shifts to utilizing SAR tools for effective search and rescue operations.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard\n\n[Source: IAMSAR-V2-2022.pdf - Page 269]\nAppendix D – Uncertainty phase data\nD-4 IAMSAR MANUAL VOLUME II (2022 EDITION)\nMan overboard (MOB) checklist\n1  Date/time of present position.\n2  Craft’s course/speed and destination.\n3  Date/time of man overboard position.\n4  Initial reporting source (parent agency, radio station, name/call sign of craft).\n5  Estimated water temperature.\n6  Person’s name, age, sex.\n7  Person’s physical condition and swimming capability.\n8  Person’s clothing amount and colour, including life preserver.\n\n[Source: IAMSAR-V3-2022.pdf - Page 50]\nIAMSAR MANUAL VOLUME III (2022 EDITION) 4-1\nMan overboard\nSpecific situations are discussed below and general guidance is provided in \naction card “MOB Man overboard”.\nThree situations\nImmediate action\n F The person overboard is noticed from the bridge and action is taken \nimmediately.\nDelayed action\n F The person is reported to the bridge by an eyewitness and action is \ninitiated with some delay.\nPerson-missing action\n F The person is reported to the bridge as missing.\nVessel manoeuvres\n\n[Source: IAMSAR-V3-2022.pdf - Page 49]\nInitial action\n• Mark and note position and time from GNSS.\n• Throw a life-ring over the side as close to the person as possible.\n• Sound three prolonged blasts of ship’s whistle; hail “man overboard”.\n\n[Source: IAMSAR-V3-2022.pdf - Page 50]\nInitial action\n• Mark and note position and time from GNSS.\n• Throw a life-ring over the side as close to the person as possible.\n• Sound three prolonged blasts of ship’s whistle; hail “man overboard”.",
+    "tool_suggestions": [
+      "tool_004",
+      "tool_002",
+      "tool_007"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_005",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Man overboard from a research vessel.",
+      "description": "Man overboard from a research vessel; drone deployed for search.",
+      "position": "67°49'04\"N 3°03'29\"E (Norwegian sea)",
+      "time": "14:20",
+      "persons_involved": "1 person missing, last seen at 14:20 local time.",
+      "vessel": "Research vessel",
+      "conditions": {
+        "visibility": "20",
+        "sea_state": "2",
+        "air_temp": "10",
+        "water_temp": "11",
+        "wind": "5 knots"
+      },
+      "actions_taken": "Drone deployed for search.",
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_005', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Man overboard from a research vessel.', 'description': 'Man overboard from a research vessel; drone deployed for search.', 'position': '67°49\\'04\"N 3°03\\'29\"E (Norwegian sea)', 'time': '14:20', 'persons_involved': '1 person missing, last seen at 14:20 local time.', 'vessel': 'Research vessel', 'conditions': {'visibility': '20', 'sea_state': '2', 'air_temp': '10', 'water_temp': '11', 'wind': '5 knots'}, 'actions_taken': 'Drone deployed for search.', 'requested_assistance': None}\n\nRecommended Tools:\n- tool_002: To calculate the estimated survival time of the person overboard based on environmental conditions (water temperature, air temperature).\n- tool_004: To estimate the current location of the person overboard based on last known position and drift.\n- tool_010: To estimate the probability of detecting the survivor based on search pattern, visibility, and sea state.\n- tool_012: To analyze live drone feeds to detect signs of survivors or debris.\n\nSituation Summary:\nA man has gone overboard from a research vessel in the Norwegian Sea. A drone has been deployed for search. The situation is distress, with one person missing.\n\nRecommended Action:\nContinue searching using the drone and other available assets. Calculate the estimated survival time of the person overboard to prioritize rescue efforts.\n\nRationale:\nThe use of tool_002 will help determine how long the person can survive in the water based on environmental conditions. Tool_004 will provide an estimate of the current location of the person, aiding search efforts. Tool_010 will assess the effectiveness of the search pattern, while tool_012 will analyze live drone feeds to identify potential signs of the survivor.\n\nConsiderations:\nWeather conditions, sea state, and visibility are crucial factors in this situation. The use of these tools will help optimize search and rescue operations.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard\n\n[Source: IAMSAR-V2-2022.pdf - Page 269]\nAppendix D – Uncertainty phase data\nD-4 IAMSAR MANUAL VOLUME II (2022 EDITION)\nMan overboard (MOB) checklist\n1  Date/time of present position.\n2  Craft’s course/speed and destination.\n3  Date/time of man overboard position.\n4  Initial reporting source (parent agency, radio station, name/call sign of craft).\n5  Estimated water temperature.\n6  Person’s name, age, sex.\n7  Person’s physical condition and swimming capability.\n8  Person’s clothing amount and colour, including life preserver.\n\n[Source: IAMSAR-V2-2022.pdf - Page 484]\nThis DR position was based on a celestial fix at 250100Z JAN 00 \nin position 38-57N, 068-54W. Communications were lost after this \ninitial call for assistance.\n2 A British Airways flight transiting the area while en route to Bermuda \nat 261100Z JAN 00 failed to sight the F/V Sample. Based on enquiries \nabout resource availability, the earliest time at which a search can \ncommence is 261630Z JAN 00. A search is to be planned for this \ncommence search time.\n\n[Source: IAMSAR-V2-2022.pdf - Page 484]\nIAMSAR MANUAL VOLUME II (2022 EDITION) Q-1\nF/V Sample – alpha search\nAlpha search scenario 1 On 25 January 2000 at 2145Z, the F/V Sample  broadcast a distress \nradio call. The captain reported the vessel's engines were inoperable \nand the vessel was taking on water, but the vessel was not in immediate \ndanger of sinking. However, the captain requested assistance. The \nvessel's reported DR position at 2145Z was given as 37-10N, 065-45W.\n\n[Source: IAMSAR-V2-2022.pdf - Page 237]\n2.  MSG NO: 00812 AUMCC REF: 2DD747073F81FE0\n3.  DETECTED AT: 28 APR 07 0920 UTC BY SARSAT S11\n4.  DETECTION FREQUENCY: 406.0278 MHz\n5.  COUNTRY OF BEACON REGISTRATION: 366/ USA\n6.  USER CLASS: NATIONAL LOCATION - PLB\n SERIAL NO: 167438\n7.  EMERGENCY CODE: NIL",
+    "tool_suggestions": [
+      "tool_002",
+      "tool_004"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_006",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Cargo vessel taking on water after collision with another ship.",
+      "description": "Cargo vessel taking on water after collision with another ship, also causing engine failure. Heavy rainfall lowering visibility.",
+      "position": "10°11'30.0\"N 79°41'20.0\"W (Carribean sea, near major shipping route)",
+      "time": "00:30",
+      "persons_involved": "Crew of 18, all accounted for but preparing to abandon ship.",
+      "vessel": "Cargo vessel",
+      "conditions": {
+        "visibility": "1",
+        "sea_state": "4",
+        "air_temp": "25",
+        "water_temp": "20",
+        "wind": "20 knots"
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_006', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Cargo vessel taking on water after collision with another ship.', 'description': 'Cargo vessel taking on water after collision with another ship, also causing engine failure. Heavy rainfall lowering visibility.', 'position': '10°11\\'30.0\"N 79°41\\'20.0\"W (Carribean sea, near major shipping route)', 'time': '00:30', 'persons_involved': 'Crew of 18, all accounted for but preparing to abandon ship.', 'vessel': 'Cargo vessel', 'conditions': {'visibility': '1', 'sea_state': '4', 'air_temp': '25', 'water_temp': '20', 'wind': '20 knots'}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: Plot the search pattern onto a map to visualize the search area and identify potential locations of survivors.\n- tool_002: Calculate the estimated survival time of the crew members based on environmental conditions such as water temperature and air temperature.\n- tool_003: Generate a weather forecast for the search and rescue operations to anticipate any changes in weather that may affect the operation.\n- tool_007: Retrieve real-time AIS data for nearby vessels to assist coordination and identify potential rescuers.\n- tool_009: Check availability and ETA of SAR assets (e.g., helicopters, rescue boats) to prepare for rescue operations.\n\nSituation Summary:\nA cargo vessel has collided with another ship, resulting in engine failure and water intake. The crew is preparing to abandon ship due to heavy rainfall reducing visibility.\n\nRecommended Action:\nAlert nearby vessels and SAR assets to the distress situation and request assistance. Prepare for potential rescue operations by plotting search patterns and anticipating weather conditions.\n\nRationale:\nGiven the distress situation and the need for immediate assistance, it is crucial to alert nearby vessels and SAR assets to respond quickly. Plotting the search pattern will help identify potential locations of survivors, while generating a weather forecast will enable better planning and preparation for the rescue operation.\n\nConsiderations:\nThe crew's decision to abandon ship should be taken into account when planning the rescue operation. Additionally, the presence of heavy rainfall and reduced visibility may impact the effectiveness of the search and rescue efforts.\n\nContext:\nThis SITREP is an example of a distress situation at sea, where a cargo vessel has collided with another ship, resulting in engine failure and water intake. The crew is preparing to abandon ship due to heavy rainfall reducing visibility, and assistance is required to respond to this emergency situation.",
+    "context": "[Source: IAMSAR-V3-2022.pdf - Page 252]\nsequence of SITREPs concerning the casualty)  \n \nIdentity of casualty (name, call sign, flag State)  \n  \nPosition (latitude/longitude)  \n  \nSituation (type of message, distress or urgency; date/time; nature of distress/\nurgency, for example, fire, collision, medical)  \n \nNumber of persons at risk  \nAssistance required  \nCoordinating RCC\n\n[Source: IAMSAR-V3-2022.pdf - Page 29]\nin danger of becoming a SAR incident, such as a: \n – collision at sea \n – loss of propulsion \n – fire \n – grounding \n – vessel taking on water \n – insufficient remaining fuel. \n F Provide medical assistance. \n F Alert appropriate authorities of unlawful acts being committed \nagainst an aircraft or vessel: \n – pirate attack \n – hijacking attempt. \n F Assist after the vessel or aircraft has been abandoned, to minimize \nfuture hazards or to prevent future, unnecessary reports or reactions.\n\n[Source: IAMSAR-V2-2022.pdf - Page 303]\nFor vessels  \nHull type              Superstructure  \nEngines/sails            Did engines sound normal   \nLocation             Direction   \nTurning?             Other vessels sighted  \nType  Description  Time  \n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\nWeather at time of sighting   \nRaining/snowing          Thunderstorm  \nWind/sea state  \nRemarks\n\n[Source: IAMSAR-V3-2022.pdf - Page 56]\nSection 4 – Vessel emergencies at sea\nIAMSAR MANUAL VOLUME III (2022 EDITION) 4-7\nCollision\n• establish communication with the other vessel \n• evaluate the situation (including, but not limited to, hull damage, injured \npersons, etc.)\n• if assistance is required, transmit distress or urgency message\n• inform RCC\nAbandoning ship\n• abandon ship only as last resort\n• transmit distress call and message\n• wear adequate clothing and, if available, immersion suits\n• wear lifejackets, tightly fastened\n\n[Source: IAMSAR-V2-2022.pdf - Page 484]\nIAMSAR MANUAL VOLUME II (2022 EDITION) Q-1\nF/V Sample – alpha search\nAlpha search scenario 1 On 25 January 2000 at 2145Z, the F/V Sample  broadcast a distress \nradio call. The captain reported the vessel's engines were inoperable \nand the vessel was taking on water, but the vessel was not in immediate \ndanger of sinking. However, the captain requested assistance. The \nvessel's reported DR position at 2145Z was given as 37-10N, 065-45W.",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_002",
+      "tool_003",
+      "tool_007",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_007",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Fishing trawler flooding due to hull breach.",
+      "description": "Fishing trawler flooding cargo hull due to hull breach during storm. EPIRB signal received.",
+      "position": "14°50'20\"N 122°32'35\"E (Philippine sea, 5 NM offshore)",
+      "time": null,
+      "persons_involved": "Crew of 12, some already in life rafts.",
+      "vessel": "Fishing vessel",
+      "conditions": {
+        "visibility": "2",
+        "sea_state": "7",
+        "air_temp": null,
+        "water_temp": null,
+        "wind": "45 knots"
+      },
+      "actions_taken": "Life raft deployed.",
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_007', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Fishing trawler flooding due to hull breach.', 'description': 'Fishing trawler flooding cargo hull due to hull breach during storm. EPIRB signal received.', 'position': '14°50\\'20\"N 122°32\\'35\"E (Philippine sea, 5 NM offshore)', 'time': None, 'persons_involved': 'Crew of 12, some already in life rafts.', 'vessel': 'Fishing vessel', 'conditions': {'visibility': '2', 'sea_state': '7', 'air_temp': None, 'water_temp': None, 'wind': '45 knots'}, 'actions_taken': 'Life raft deployed.', 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: To visualize the search area and plot potential survivor locations.\n- tool_002: To estimate the survival time of the crew members in the life rafts based on the harsh environmental conditions (high wind, rough sea state).\n- tool_003: To retrieve a weather forecast for the area to understand the current and predicted weather conditions that may impact search operations.\n- tool_004: To calculate the potential drift of the survivors from their last known position.\n- tool_007: To retrieve real-time AIS data of nearby vessels that could potentially assist in the rescue operation.\n- tool_009: To check on the availability and ETA of SAR assets such as helicopters or rescue boats.\n\nSituation Summary:\nA fishing trawler with a crew of 12 has experienced a hull breach during a storm, leading to flooding. An EPIRB signal was received, indicating distress. The vessel is located in the Philippine Sea, approximately 5 NM offshore, with severe weather conditions (high winds, rough seas). Some crew members are already in life rafts.\n\nRecommended Action:\nActivate search and rescue operations focusing on the estimated drift area of survivors based on their last known position and current environmental conditions. Utilize nearby vessels or SAR assets to locate and assist survivors as soon as possible.\n\nRationale:\nGiven the severity of the weather, the safety of both survivors and rescuers is paramount. Identifying potential locations through drift calculations and visualizing these areas will aid in coordinating an efficient search effort.\n\nConsiderations:\n- The harsh weather conditions necessitate a swift response to locate survivors before their situation worsens.\n- Coordination with nearby vessels or SAR assets can significantly improve the chances of successful rescue.\n- Continuous monitoring of the weather forecast is essential for planning and executing the rescue operation safely.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 484]\nIAMSAR MANUAL VOLUME II (2022 EDITION) Q-1\nF/V Sample – alpha search\nAlpha search scenario 1 On 25 January 2000 at 2145Z, the F/V Sample  broadcast a distress \nradio call. The captain reported the vessel's engines were inoperable \nand the vessel was taking on water, but the vessel was not in immediate \ndanger of sinking. However, the captain requested assistance. The \nvessel's reported DR position at 2145Z was given as 37-10N, 065-45W.\n\n[Source: IAMSAR-V3-2022.pdf - Page 36]\nF position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)\n – number and type of survival craft launched\n\n[Source: IAMSAR-V3-2022.pdf - Page 35]\nF call sign or other identification \n F MMSI (if the initial alert has been sent by DSC) \n F position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)\n\n[Source: IAMSAR-V2-2022.pdf - Page 315]\nVERIFIED AIRCRAFT ON VFR FLIGHT PLAN DEPARTED PORT OF SPAIN TRINIDAD \n152100Z EN ROUTE AGUADILLA, PUERTO RICO/8 PERSON LIFERAFT WITH CANOPY \nAND SURVIVAL SUPPLIES/FLARES \nH. WEATHER ON SCENE UNKNOWN \nJ. AIRCRAFT ISSUED MAYDAY BROADCAST ON 121.5 MHZ WHICH WAS HEARD BY \nAIR FRANCE 747. PILOT OF DISTRESS AIRCRAFT GAVE POSITION, STATED BOTH \nENGINES FLAMED OUT AND DESCENDING THROUGH 5000 FEET WITH INTENTIONS TO \nDITCH. \nK. NO SEARCH ASSETS AVAILABLE \nBT\n\n[Source: IAMSAR-V2-2022.pdf - Page 209]\n8.2.6 The following information regarding the distressed craft should be given to the intercepting facility:\n – description, including call sign and other identification marks;\n – position at a specified time and type of navigation aids used;\n – heading and drift (or track);\n – speed over the ground or water;\n – if an aircraft, whether maintaining altitude, climbing, or descending;\n – number of persons at risk; and\n – brief description of the emergency.",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_002",
+      "tool_003",
+      "tool_004",
+      "tool_007",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_008",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Passenger ferry sinking after uncontrolled fire caused flooding.",
+      "description": "Passenger ferry sinking after uncontrolled fire caused flooding. EPIRB signal received.",
+      "position": "15°33'01\"S 42°40'50\"E (Mozambique channel)",
+      "time": null,
+      "persons_involved": "Crew of 20 and 80 passengers, 100 souls in total.",
+      "vessel": "Passenger ferry",
+      "conditions": {
+        "visibility": "35",
+        "sea_state": "2",
+        "air_temp": "15",
+        "water_temp": null,
+        "wind": null
+      },
+      "actions_taken": "Multiple life rafts deployed.",
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_008', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Passenger ferry sinking after uncontrolled fire caused flooding.', 'description': 'Passenger ferry sinking after uncontrolled fire caused flooding. EPIRB signal received.', 'position': '15°33\\'01\"S 42°40\\'50\"E (Mozambique channel)', 'time': None, 'persons_involved': 'Crew of 20 and 80 passengers, 100 souls in total.', 'vessel': 'Passenger ferry', 'conditions': {'visibility': '35', 'sea_state': '2', 'air_temp': '15', 'water_temp': None, 'wind': None}, 'actions_taken': 'Multiple life rafts deployed.', 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: To plot the search pattern onto a map and identify potential areas where survivors may be located.\n- tool_002: To calculate the estimated survival time of survivors based on environmental conditions, helping to prioritize search efforts.\n- tool_003: To generate a weather forecast for the search area, which will impact the effectiveness of search operations and survivor survivability.\n- tool_004: Given that multiple life rafts were deployed, this tool can help predict their location based on drift and last known position.\n- tool_007: To retrieve real-time AIS data for nearby vessels to assist in coordinating a rescue effort and identifying potential rescuers in the vicinity.\n- tool_008: For sending emergency messages to relevant authorities or nearby vessels that could assist in the rescue operation.\n- tool_009: Checking availability and ETA of SAR assets is crucial for planning an effective response, especially given the distress nature of the incident.\n- tool_015: To generate a timeline for SAR operations, which will be essential for coordinating asset deployment, search phases, and recovery efforts.\n\nSituation Summary:\nA passenger ferry with 100 souls on board has sunk due to uncontrolled fire causing flooding. Multiple life rafts have been deployed. The EPIRB signal was received, indicating an emergency situation requiring immediate attention.\n\nRecommended Action:\nInitiate a SAR operation focusing on locating the survivors in the life rafts. Use available tools for planning and executing the search efficiently, considering environmental conditions and asset availability.\n\nRationale:\nThe high number of people involved and the distress nature of the incident necessitate rapid and organized action. Utilizing the recommended tools will enhance the chances of successful rescue by optimizing search efforts based on predicted survivor locations, weather forecasts, and available resources.\n\nConsiderations:\n- The effectiveness of SAR operations heavily depends on accurate and timely information.\n- Coordination with nearby vessels and authorities is crucial for a swift response.\n- Prioritization based on estimated survival times may be necessary given the potentially large number of survivors and limited resources.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard\n\n[Source: IAMSAR-V2-2022.pdf - Page 315]\nVERIFIED AIRCRAFT ON VFR FLIGHT PLAN DEPARTED PORT OF SPAIN TRINIDAD \n152100Z EN ROUTE AGUADILLA, PUERTO RICO/8 PERSON LIFERAFT WITH CANOPY \nAND SURVIVAL SUPPLIES/FLARES \nH. WEATHER ON SCENE UNKNOWN \nJ. AIRCRAFT ISSUED MAYDAY BROADCAST ON 121.5 MHZ WHICH WAS HEARD BY \nAIR FRANCE 747. PILOT OF DISTRESS AIRCRAFT GAVE POSITION, STATED BOTH \nENGINES FLAMED OUT AND DESCENDING THROUGH 5000 FEET WITH INTENTIONS TO \nDITCH. \nK. NO SEARCH ASSETS AVAILABLE \nBT\n\n[Source: IAMSAR-V2-2022.pdf - Page 484]\nIAMSAR MANUAL VOLUME II (2022 EDITION) Q-1\nF/V Sample – alpha search\nAlpha search scenario 1 On 25 January 2000 at 2145Z, the F/V Sample  broadcast a distress \nradio call. The captain reported the vessel's engines were inoperable \nand the vessel was taking on water, but the vessel was not in immediate \ndanger of sinking. However, the captain requested assistance. The \nvessel's reported DR position at 2145Z was given as 37-10N, 065-45W.\n\n[Source: IAMSAR-V2-2022.pdf - Page 407]\nA (References)\n1  SITUATION:\nA   SUMMARY: (A brief summary of the case, without repeating information previously provided to all \naddressees.)\nB   DESCRIPTION: (Description of the missing craft, e.g. MOTOR VESSEL, 150 METRES, BLACK HULL, \nWHITE SUPERSTRUCTURE AFT)\nC  PERSONS ON BOARD: (Number)\nD  SEARCH OBJECTS:\nPRIMARY:    (Description of the primary search object, e.g. 8-PERSON ORANGE LIFERAFT WITH \nCANOPY)\n\n[Source: IAMSAR-V2-2022.pdf - Page 408]\nA (References)\n1  SITUATION:\nA   SUMMARY: (A brief summary of the case, without repeating information previously provided to all \naddressees.)\nB   DESCRIPTION: (Description of the missing craft, e.g. MOTOR VESSEL, 150 METRES, BLACK HULL, \nWHITE SUPERSTRUCTURE AFT)\nC  PERSONS ON BOARD: (Number)\nD  SEARCH OBJECTS:\nPRIMARY:    (Description of the primary search object, e.g. 8-PERSON ORANGE LIFERAFT WITH \nCANOPY)",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_002",
+      "tool_003",
+      "tool_004",
+      "tool_007",
+      "tool_008",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_009",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Fire in the engine room of a cargo vessel.",
+      "description": "Fire in the engine room of a cargo vessel, risk of explosion due to fuel tanks, some of the crew is exposed to smoke. Vessel still afloat but losing propulsion.",
+      "position": "6°16'27\"N 97°47'37\"E (Mallaca strait, near shipping lane)",
+      "time": "10:45",
+      "persons_involved": "Crew of 20, all onboard.",
+      "vessel": "Cargo vessel",
+      "conditions": {
+        "visibility": null,
+        "sea_state": null,
+        "air_temp": "28",
+        "water_temp": "25",
+        "wind": null
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_009', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Fire in the engine room of a cargo vessel.', 'description': 'Fire in the engine room of a cargo vessel, risk of explosion due to fuel tanks, some of the crew is exposed to smoke. Vessel still afloat but losing propulsion.', 'position': '6°16\\'27\"N 97°47\\'37\"E (Mallaca strait, near shipping lane)', 'time': '10:45', 'persons_involved': 'Crew of 20, all onboard.', 'vessel': 'Cargo vessel', 'conditions': {'visibility': None, 'sea_state': None, 'air_temp': '28', 'water_temp': '25', 'wind': None}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_002: To calculate the estimated survival time of the crew members exposed to smoke.\n- tool_007: To retrieve real-time AIS data for nearby vessels that can assist in rescue operations or provide medical aid if needed.\n- tool_008: To send emergency messages to relevant authorities and nearby vessels for assistance.\n- tool_009: To check availability and ETA of SAR assets, such as helicopters or rescue boats, which might be required given the vessel's loss of propulsion.\n\nSituation Summary:\nThe situation involves a cargo vessel with a fire in its engine room. The crew is at risk due to smoke exposure, and there is a risk of explosion from fuel tanks. Despite losing propulsion, the vessel remains afloat. Given these conditions, immediate assistance is crucial for both firefighting efforts and potential rescue operations.\n\nRecommended Action:\nFirst, alert nearby vessels and relevant authorities about the distress situation using tool_008. Utilize tool_007 to gather real-time AIS data on nearby vessels that could offer aid or provide medical support if needed. Since the crew's survival time might be critical due to smoke exposure, use tool_002 to estimate their survival time based on environmental conditions.\n\nRationale:\nThe combination of a fire onboard and the risk of explosion necessitates immediate external assistance. Given the potential for a medical emergency among the crew exposed to smoke, having nearby vessels or SAR assets with medical capabilities is vital. Since the vessel's position is known, leveraging AIS data (tool_007) can quickly identify nearby responders.\n\nConsiderations:\n- Ensuring prompt communication and coordination with nearby vessels and SAR assets is crucial.\n- Assessing the severity of smoke exposure for the crew to determine if immediate medical evacuation is necessary.\n- Given the fire in the engine room, there's a risk of further complications such as explosions or sinking; hence, planning for potential rescue operations is essential.\n\nContext:\nThis SITREP falls under emergency situations at sea involving vessel fires, which can rapidly escalate into more severe distress scenarios. The procedures outlined in IAMSAR manuals (such as sounding fire alarms, assessing the fire, and considering appropriate extinguishing agents) are critical steps on board the vessel. However, given the external request for assistance, SAR operations must also consider these factors in planning a response.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 484]\nIAMSAR MANUAL VOLUME II (2022 EDITION) Q-1\nF/V Sample – alpha search\nAlpha search scenario 1 On 25 January 2000 at 2145Z, the F/V Sample  broadcast a distress \nradio call. The captain reported the vessel's engines were inoperable \nand the vessel was taking on water, but the vessel was not in immediate \ndanger of sinking. However, the captain requested assistance. The \nvessel's reported DR position at 2145Z was given as 37-10N, 065-45W.\n\n[Source: IAMSAR-V3-2022.pdf - Page 55]\nfire\n F begin procedures for attacking the fire\n F continue until fire is extinguished\n• If assistance is required, transmit distress call and message\nGrounding\n• check for hull damages\n• if assistance is required, transmit a distress or urgency message as \nappropriate\n• determine which way deep water lies\n• determine if wind and sea are carrying the vessel harder aground\n• lessen the draught of the vessel\n• put engines astern to back away\n\n[Source: IAMSAR-V3-2022.pdf - Page 29]\nin danger of becoming a SAR incident, such as a: \n – collision at sea \n – loss of propulsion \n – fire \n – grounding \n – vessel taking on water \n – insufficient remaining fuel. \n F Provide medical assistance. \n F Alert appropriate authorities of unlawful acts being committed \nagainst an aircraft or vessel: \n – pirate attack \n – hijacking attempt. \n F Assist after the vessel or aircraft has been abandoned, to minimize \nfuture hazards or to prevent future, unnecessary reports or reactions.\n\n[Source: IAMSAR-V3-2022.pdf - Page 252]\nsequence of SITREPs concerning the casualty)  \n \nIdentity of casualty (name, call sign, flag State)  \n  \nPosition (latitude/longitude)  \n  \nSituation (type of message, distress or urgency; date/time; nature of distress/\nurgency, for example, fire, collision, medical)  \n \nNumber of persons at risk  \nAssistance required  \nCoordinating RCC\n\n[Source: IAMSAR-V3-2022.pdf - Page 55]\nSection 4 – Vessel emergencies at sea\n4-6 IAMSAR MANUAL VOLUME III (2022 EDITION)\nShipboard fire\n• sound fire alarm\n• report location of fire\n• assess fire\n F determine the class of fire\n F determine appropriate extinguishing agent\n F determine appropriate method of attack\n F determine how to prevent the spread of the fire\n F determine the required personnel and fire-fighting assignments\n F establish proper communications between bridge and location of \nfire",
+    "tool_suggestions": [
+      "tool_002",
+      "tool_007",
+      "tool_008",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_010",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Fire in galley of a passenger ferry.",
+      "description": "Fire in galley in passenger ferry, spreading to passenger areas; toxic smoke risk. EPRIB activated",
+      "position": "36°16'54\"N 14°45'26\"E (Mediterranean sea, 25 NM offshore)",
+      "time": null,
+      "persons_involved": "Crew of 25 and 150 passengers.",
+      "vessel": "Passenger ferry",
+      "conditions": {
+        "visibility": null,
+        "sea_state": null,
+        "air_temp": "12",
+        "water_temp": "10",
+        "wind": null
+      },
+      "actions_taken": "Life boats deployed, evacuation underway.",
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_010', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Fire in galley of a passenger ferry.', 'description': 'Fire in galley in passenger ferry, spreading to passenger areas; toxic smoke risk. EPRIB activated', 'position': '36°16\\'54\"N 14°45\\'26\"E (Mediterranean sea, 25 NM offshore)', 'time': None, 'persons_involved': 'Crew of 25 and 150 passengers.', 'vessel': 'Passenger ferry', 'conditions': {'visibility': None, 'sea_state': None, 'air_temp': '12', 'water_temp': '10', 'wind': None}, 'actions_taken': 'Life boats deployed, evacuation underway.', 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: Plotting the search pattern onto a map can help identify areas where survivors might be located.\n- tool_002: Calculating the estimated survival time of a survivor based on environmental conditions (air and water temperature) is crucial for prioritizing rescue efforts.\n- tool_003: Generating a weather forecast for search and rescue operations will provide critical information about potential challenges and necessary preparations.\n- tool_007: Retrieving real-time AIS data for nearby vessels can assist in identifying potential rescuers or hazards in the area.\n- tool_008: Sending emergency messages to relevant authorities or nearby vessels is essential for alerting potential responders and coordinating efforts.\n- tool_009: Checking availability and ETA of SAR assets will help plan an efficient response.\n\nSituation Summary:\nA passenger ferry with 175 people on board (crew and passengers) has reported a fire in the galley, which is spreading and producing toxic smoke. An EPRIB (Emergency Position Indicating Radio Beacon) has been activated, indicating a distress situation. Lifeboats have been deployed, and evacuation is underway.\n\nRecommended Action:\nImmediate action should focus on ensuring the safe evacuation of all persons from the ferry and providing assistance to those in lifeboats or in the water. Coordinating with nearby vessels and SAR assets is crucial for effective rescue operations.\n\nRationale:\nGiven the distress situation and the number of people involved, swift action is necessary to prevent loss of life. Understanding environmental conditions (weather forecast), calculating survival times, and plotting search patterns can significantly aid in prioritizing rescue efforts. Utilizing AIS data and emergency messaging tools ensures that all potential responders are informed and prepared.\n\nConsiderations:\nGiven the fire on board, there may be survivors with smoke inhalation or burn injuries requiring immediate medical attention. The weather conditions (visibility, sea state, wind) could impact both the rescue operations and survivor survival times.\n\nContext:\nThe incident occurs in the Mediterranean Sea, 25 nautical miles offshore, which might have implications for response time and the availability of nearby vessels or SAR assets.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 484]\nIAMSAR MANUAL VOLUME II (2022 EDITION) Q-1\nF/V Sample – alpha search\nAlpha search scenario 1 On 25 January 2000 at 2145Z, the F/V Sample  broadcast a distress \nradio call. The captain reported the vessel's engines were inoperable \nand the vessel was taking on water, but the vessel was not in immediate \ndanger of sinking. However, the captain requested assistance. The \nvessel's reported DR position at 2145Z was given as 37-10N, 065-45W.\n\n[Source: IAMSAR-V2-2022.pdf - Page 315]\nVERIFIED AIRCRAFT ON VFR FLIGHT PLAN DEPARTED PORT OF SPAIN TRINIDAD \n152100Z EN ROUTE AGUADILLA, PUERTO RICO/8 PERSON LIFERAFT WITH CANOPY \nAND SURVIVAL SUPPLIES/FLARES \nH. WEATHER ON SCENE UNKNOWN \nJ. AIRCRAFT ISSUED MAYDAY BROADCAST ON 121.5 MHZ WHICH WAS HEARD BY \nAIR FRANCE 747. PILOT OF DISTRESS AIRCRAFT GAVE POSITION, STATED BOTH \nENGINES FLAMED OUT AND DESCENDING THROUGH 5000 FEET WITH INTENTIONS TO \nDITCH. \nK. NO SEARCH ASSETS AVAILABLE \nBT\n\n[Source: IAMSAR-V3-2022.pdf - Page 55]\nfire\n F begin procedures for attacking the fire\n F continue until fire is extinguished\n• If assistance is required, transmit distress call and message\nGrounding\n• check for hull damages\n• if assistance is required, transmit a distress or urgency message as \nappropriate\n• determine which way deep water lies\n• determine if wind and sea are carrying the vessel harder aground\n• lessen the draught of the vessel\n• put engines astern to back away\n\n[Source: IAMSAR-V2-2022.pdf - Page 314]\nDATE AND TIME (UTC or Local Date Time Group)\nFROM: (Originating RCC)\nTO:\nSAR SITREP (NUMBER) (To indicate nature of message and \ncompleteness of sequence of SITREPs \nconcerning the casualty)\nA. IDENTITY OF CASUALTY (Name/call sign, flag State)\nB. POSITION (Latitude/longitude)\nC. SITUATION (Type of message, e.g. distress/urgency; date/\ntime; nature of distress/urgency, e.g. fire, \ncollision, medico)\nD. NUMBER OF PERSONS\nE. ASSISTANCE REQUIRED\nF. COORDINATING RCC\n\n[Source: IAMSAR-V3-2022.pdf - Page 252]\nsequence of SITREPs concerning the casualty)  \n \nIdentity of casualty (name, call sign, flag State)  \n  \nPosition (latitude/longitude)  \n  \nSituation (type of message, distress or urgency; date/time; nature of distress/\nurgency, for example, fire, collision, medical)  \n \nNumber of persons at risk  \nAssistance required  \nCoordinating RCC",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_002",
+      "tool_003",
+      "tool_007",
+      "tool_008",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_011",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Fire in cargo hold.",
+      "description": "Fire in cargo hold of cargo vessel with hazardous materials; risk of explosion. EPIRB signal received.",
+      "position": "37°18'10\"N 124°00'39\"E (Yellow sea, 45 NM offshore)",
+      "time": null,
+      "persons_involved": "Crew of 22, preparing to abandon ship.",
+      "vessel": "Cargo vessel",
+      "conditions": {
+        "visibility": null,
+        "sea_state": "5",
+        "air_temp": "8",
+        "water_temp": "7",
+        "wind": "25 knots"
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_011', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Fire in cargo hold.', 'description': 'Fire in cargo hold of cargo vessel with hazardous materials; risk of explosion. EPIRB signal received.', 'position': '37°18\\'10\"N 124°00\\'39\"E (Yellow sea, 45 NM offshore)', 'time': None, 'persons_involved': 'Crew of 22, preparing to abandon ship.', 'vessel': 'Cargo vessel', 'conditions': {'visibility': None, 'sea_state': '5', 'air_temp': '8', 'water_temp': '7', 'wind': '25 knots'}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: To plot the search pattern onto a map and identify potential search areas.\n- tool_003: To generate a weather forecast for search and rescue operations to assess conditions in the area.\n- tool_004: To calculate the location of survivors based on last known position and drift, assuming they have abandoned ship.\n- tool_008: To send emergency messages to relevant authorities or nearby vessels to coordinate assistance and potential rescue efforts.\n- tool_009: To check availability and ETA of SAR assets (e.g., helicopters, rescue boats) for response planning.\n\nSituation Summary:\nThe cargo vessel is experiencing a fire in its cargo hold with hazardous materials on board. The crew of 22 is preparing to abandon ship due to the risk of explosion. An EPIRB signal has been received.\n\nRecommended Action:\nImmediate assistance is required due to the high-risk nature of the situation. Rescue assets (helicopters or rescue boats) should be dispatched as soon as possible, considering the weather conditions and potential for survivors in the water.\n\nRationale:\nGiven the hazardous materials involved and the risk of explosion, it's crucial to act quickly while also ensuring the safety of the rescue teams. Weather conditions could impact both the survivors' drift patterns and the effectiveness of the rescue efforts.\n\nConsiderations:\nThe situation is highly volatile due to the presence of hazardous materials and the potential for an explosion. Prioritizing the safety of the crew and any potential rescuers while moving swiftly to respond is critical.\n\nContext:\nThis response adheres to SAR protocols by rapidly assessing the situation, identifying necessary tools for effective search and rescue operations, and outlining a plan that prioritizes both speed and safety in response to a distress call involving hazardous materials.",
+    "context": "[Source: IAMSAR-V3-2022.pdf - Page 35]\nF call sign or other identification \n F MMSI (if the initial alert has been sent by DSC) \n F position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)\n\n[Source: IAMSAR-V3-2022.pdf - Page 55]\nfire\n F begin procedures for attacking the fire\n F continue until fire is extinguished\n• If assistance is required, transmit distress call and message\nGrounding\n• check for hull damages\n• if assistance is required, transmit a distress or urgency message as \nappropriate\n• determine which way deep water lies\n• determine if wind and sea are carrying the vessel harder aground\n• lessen the draught of the vessel\n• put engines astern to back away\n\n[Source: IAMSAR-V3-2022.pdf - Page 29]\nin danger of becoming a SAR incident, such as a: \n – collision at sea \n – loss of propulsion \n – fire \n – grounding \n – vessel taking on water \n – insufficient remaining fuel. \n F Provide medical assistance. \n F Alert appropriate authorities of unlawful acts being committed \nagainst an aircraft or vessel: \n – pirate attack \n – hijacking attempt. \n F Assist after the vessel or aircraft has been abandoned, to minimize \nfuture hazards or to prevent future, unnecessary reports or reactions.\n\n[Source: IAMSAR-V2-2022.pdf - Page 484]\nIAMSAR MANUAL VOLUME II (2022 EDITION) Q-1\nF/V Sample – alpha search\nAlpha search scenario 1 On 25 January 2000 at 2145Z, the F/V Sample  broadcast a distress \nradio call. The captain reported the vessel's engines were inoperable \nand the vessel was taking on water, but the vessel was not in immediate \ndanger of sinking. However, the captain requested assistance. The \nvessel's reported DR position at 2145Z was given as 37-10N, 065-45W.\n\n[Source: IAMSAR-V3-2022.pdf - Page 252]\nsequence of SITREPs concerning the casualty)  \n \nIdentity of casualty (name, call sign, flag State)  \n  \nPosition (latitude/longitude)  \n  \nSituation (type of message, distress or urgency; date/time; nature of distress/\nurgency, for example, fire, collision, medical)  \n \nNumber of persons at risk  \nAssistance required  \nCoordinating RCC",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_003",
+      "tool_004",
+      "tool_008",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_012",
+      "priority": "urgency",
+      "message_type": "SITREP",
+      "incident_type": "Woman unconscious.",
+      "description": "Passenger has suspected food allergy reaction. No medicine on board.",
+      "position": "19°31'29\"N 154°46'16\"W (Hawaii, 2 NM offshore)",
+      "time": "19:00",
+      "persons_involved": "1 person.",
+      "vessel": "Yacht",
+      "conditions": {
+        "visibility": "40",
+        "sea_state": "1",
+        "air_temp": "15",
+        "water_temp": "16",
+        "wind": null
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_012', 'priority': 'urgency', 'message_type': 'SITREP', 'incident_type': 'Woman unconscious.', 'description': 'Passenger has suspected food allergy reaction. No medicine on board.', 'position': '19°31\\'29\"N 154°46\\'16\"W (Hawaii, 2 NM offshore)', 'time': '19:00', 'persons_involved': '1 person.', 'vessel': 'Yacht', 'conditions': {'visibility': '40', 'sea_state': '1', 'air_temp': '15', 'water_temp': '16', 'wind': None}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_002: This tool can estimate the survival time of the unconscious woman based on environmental conditions.\n- tool_003: The weather forecast will help in planning rescue operations and assessing the situation's urgency.\n- tool_008: Sending emergency messages to relevant authorities or nearby vessels is crucial for immediate assistance.\n- tool_009: Checking the availability and ETA of SAR assets can facilitate rapid response.\n\nSituation Summary:\nA woman on a yacht 2 NM offshore Hawaii has fallen unconscious due to a suspected food allergy reaction. There's no medicine onboard, making timely medical assistance critical.\n\nRecommended Action:\nActivate emergency protocols by sending distress signals (tool_008) and gather information about the nearest SAR assets for immediate deployment (tool_009).\n\nRationale:\nThe urgency of this situation necessitates swift action. Estimating survival time (tool_002) and understanding weather conditions (tool_003) will aid in planning a rescue that ensures the best possible outcome.\n\nConsiderations:\nGiven the nature of the incident, medical assistance is paramount. Ensuring the readiness of SAR assets equipped with medical supplies or personnel could significantly impact the woman's chances of recovery.\n\nContext:\nThis scenario underlines the importance of preparedness for emergencies at sea and the necessity of having basic medical supplies on board all vessels.",
+    "context": "[Source: IAMSAR-V3-2022.pdf - Page 46]\nF time of last food consumption\n F ability of patient to eat, drink, walk, or be moved\n F with accident cases, how the accident occurred\n F whether the vessel has a medicine chest, and whether a physician \nor other medically trained person is on board\n F whether a suitable clear area is available for helicopter winch \noperations or landings\n F name, address and phone number of vessel’s agent\n F last port of call, next port of call, and ETA to next port of call\n\n[Source: IAMSAR-V2-2022.pdf - Page 315]\nVERIFIED AIRCRAFT ON VFR FLIGHT PLAN DEPARTED PORT OF SPAIN TRINIDAD \n152100Z EN ROUTE AGUADILLA, PUERTO RICO/8 PERSON LIFERAFT WITH CANOPY \nAND SURVIVAL SUPPLIES/FLARES \nH. WEATHER ON SCENE UNKNOWN \nJ. AIRCRAFT ISSUED MAYDAY BROADCAST ON 121.5 MHZ WHICH WAS HEARD BY \nAIR FRANCE 747. PILOT OF DISTRESS AIRCRAFT GAVE POSITION, STATED BOTH \nENGINES FLAMED OUT AND DESCENDING THROUGH 5000 FEET WITH INTENTIONS TO \nDITCH. \nK. NO SEARCH ASSETS AVAILABLE \nBT\n\n[Source: IAMSAR-V2-2022.pdf - Page 92]\nChapter 3 – Awareness and initial action\nIAMSAR MANUAL VOLUME II (2022 EDITION) 3-17\n(a) height of eye (for an informant on board a vessel or height above sea level for a person on \nland – this may have to be assessed by reference to a suitable map);\n(b) weather conditions in the area (visibility, rain, fog, mist, haze, low cloud);\n(c) actions by vessels. If the informant is on a vessel, ask them to immediately turn onto the heading\n\n[Source: IAMSAR-V3-2022.pdf - Page 260]\nHoist positions on scene\n \nWeather on scene QNH\n\n[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard",
+    "tool_suggestions": [
+      "tool_002",
+      "tool_003",
+      "tool_008",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_013",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "EPIRB signal received.",
+      "description": "Automatic activation of EPIRB signal received.",
+      "position": "34°21'23\"N 121°19'47\"W (Pacific ocean)",
+      "time": "05:00",
+      "persons_involved": null,
+      "vessel": "Research vessel",
+      "conditions": {
+        "visibility": null,
+        "sea_state": null,
+        "air_temp": "24",
+        "water_temp": "23",
+        "wind": null
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_013', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'EPIRB signal received.', 'description': 'Automatic activation of EPIRB signal received.', 'position': '34°21\\'23\"N 121°19\\'47\"W (Pacific ocean)', 'time': '05:00', 'persons_involved': None, 'vessel': 'Research vessel', 'conditions': {'visibility': None, 'sea_state': None, 'air_temp': '24', 'water_temp': '23', 'wind': None}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_004: Calculate the location of a survivor based on last known position and drift.\n- tool_007: Retrieve real-time AIS data for nearby vessels to assist coordination and identify potential rescuers.\n- tool_008: Send emergency messages to relevant authorities or nearby vessels.\n- tool_009: Check availability and ETA of SAR assets (e.g., helicopters, rescue boats).\n- tool_014: Rank search areas based on likelihood of survivor presence and environmental conditions.\n\nSituation Summary:\nAn EPIRB signal has been automatically activated, indicating a potential distress situation involving a research vessel. The position is provided as 34°21'23\"N 121°19'47\"W in the Pacific ocean at 05:00 UTC.\n\nRecommended Action:\nInitiate search and rescue operations by dispatching nearby vessels or aircraft to the scene. Utilize tool_004 to calculate the possible drift of survivors based on wind, current, and time since activation. Activate emergency messaging with tool_008 to alert relevant authorities and potential rescuers in the area. Assess available SAR assets with tool_009 for deployment.\n\nRationale:\nGiven the distress situation indicated by the EPIRB signal, immediate action is necessary to ensure a timely response that maximizes the chances of locating and rescuing those involved.\n\nConsiderations:\nThe environmental conditions such as air temperature, water temperature, and potential wind could impact both the survivors' condition and the search efforts. Utilizing tool_014 will help in prioritizing search areas based on survivor presence likelihood and these environmental factors.\n\nContext:\nThis response is tailored to an EPIRB distress situation requiring immediate attention and action for search and rescue operations in a maritime context.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 237]\n2.  MSG NO: 00812 AUMCC REF: 2DD747073F81FE0\n3.  DETECTED AT: 28 APR 07 0920 UTC BY SARSAT S11\n4.  DETECTION FREQUENCY: 406.0278 MHz\n5.  COUNTRY OF BEACON REGISTRATION: 366/ USA\n6.  USER CLASS: NATIONAL LOCATION - PLB\n SERIAL NO: 167438\n7.  EMERGENCY CODE: NIL\n\n[Source: IAMSAR-V2-2022.pdf - Page 240]\n5.  COUNTRY OF BEACON REGISTRATION: 366/ USA\n6.  USER CLASS: SERIAL USER – EPIRB (NON-FLOAT FREE)\n SERIAL NO: 0003050\n7.  EMERGENCY CODE: NIL\n8.   POSITIONS: \nRESOLVED - NIL \nDOPPLER A - 36 38 S 168 58 E PROB 50 PERCENT \nDOPPLER B - 36 39 S 169 01 E PROB 50 PERCENT \nENCODED -  NIL\n9.  ENCODED POSITION PROVIDED BY: NIL\n10.   NEXT PASS TIMES: \nRESOLVED - NIL \nDOPPLER A - 21 MAY 07 0812 UTC  \nDOPPLER B - 21 MAY 07 0812 UTC \nENCODED - NIL\n11.  HEX ID: ADCE402FA80028D HOMING SIGNAL: 121.5 MHZ\n\n[Source: IAMSAR-V2-2022.pdf - Page 241]\n8.   POSITIONS: \nRESOLVED - 25 13 N 055 22 E \nDOPPLER A - 25 17 N 055 23 E \nDOPPLER B - NIL \nENCODED - NIL\n9.  ENCODED POSITION PROVIDED BY: NIL\n10.   NEXT PASS TIMES: \nRESOLVED - NIL \nDOPPLER A - NIL \nDOPPLER B - NIL \nENCODED - NIL\n11.  HEX ID: 9D064BED62EAFE1 HOMING SIGNAL: 121.5 MHZ\n12.  ACTIVATION TYPE: MANUAL\n13.  BEACON NUMBER ON AIRCRAFT OR VESSEL: NIL\n14.  OTHER ENCODED INFORMATION: NIL\n15.  OPERATIONAL INFORMATION: NIL\n16.  REMARKS: NIL\n END OF MESSAGE\nSample 406 MHz Position Alert\n\n[Source: IAMSAR-V2-2022.pdf - Page 243]\n2.  DISTRESS MESSAGE RECEIVED FROM INMARSAT-C \n NUMBER (Insert Mobile Number) AT TIME (UTC Time and date of receipt)\n3.   POSITION LAT. . . . . . . . LONG. . . . . . . . . . . \nUPDATED AT TIME. . . . . . . . . . . . . . . . . . . . . . . . . . . . UTC DATE UNKNOWN \nCOURSE. . . . . . . . . . . . . . \nSPEED. . . . . . . . . . . . . KTS\n4.  OTHER INFORMATION\n DISTRESS TYPE      NOT SPECIFIED (Default, change as required)\n INMARSAT REGION     PACIFIC (Default, change as required)\n\n[Source: IAMSAR-V2-2022.pdf - Page 237]\nRESOLVED - NIL \nDOPPLER A - NIL \nDOPPLER B - NIL \nENCODED - NIL\n11.  HEX ID: 331000033F81FE0 HOMING SIGNAL: 121.5 MHZ\n12.  ACTIVATION TYPE: NIL\n13.  BEACON NUMBER ON AIRCRAFT OR VESSEL: NIL\n14.  OTHER ENCODED INFORMATION: NIL\n15.  OPERATIONAL INFORMATION:\n BEACON REGISTRATION AT WWW.406REGISTRATION.COM\n16.  REMARKS: NIL\n END OF MESSAGE\nSample 406 MHz Resolved Position Alert \n(National Location – PLB)\n1.  DISTRESS COSPAS-SARSAT POSITION RESOLVED ALERT\n2.  MSG NO: 00812 AUMCC REF: 2DD747073F81FE0",
+    "tool_suggestions": [
+      "tool_004",
+      "tool_007",
+      "tool_008",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_014",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "Crew members overboard from a cargo vessel during a storm.",
+      "description": "Crew members swept overboard from a cargo vessel during a storm. Automatic man overboard alarm signal triggered, with AIS signal.",
+      "position": "32°03'41\"S 72°03'41\"W (Pacific ocean)",
+      "time": "16:10",
+      "persons_involved": "2 people missing, last seen at 16:10 local time.",
+      "vessel": "Cargo vessel",
+      "conditions": {
+        "visibility": null,
+        "sea_state": "7",
+        "air_temp": "7",
+        "water_temp": "6",
+        "wind": "40 knots"
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_014', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'Crew members overboard from a cargo vessel during a storm.', 'description': 'Crew members swept overboard from a cargo vessel during a storm. Automatic man overboard alarm signal triggered, with AIS signal.', 'position': '32°03\\'41\"S 72°03\\'41\"W (Pacific ocean)', 'time': '16:10', 'persons_involved': '2 people missing, last seen at 16:10 local time.', 'vessel': 'Cargo vessel', 'conditions': {'visibility': None, 'sea_state': '7', 'air_temp': '7', 'water_temp': '6', 'wind': '40 knots'}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: Plot the search pattern onto a map to visualize the area where the crew members were last seen.\n- tool_002: Calculate the estimated survival time of the survivors based on environmental conditions (water temperature and air temperature).\n- tool_004: Calculate the location of the survivors based on their last known position and drift due to wind and sea state.\n- tool_007: Retrieve real-time AIS data for nearby vessels to assist in coordination and identify potential rescuers.\n- tool_008: Send emergency messages to relevant authorities or nearby vessels to request assistance.\n\nSituation Summary:\nTwo crew members have been swept overboard from a cargo vessel during a storm. The incident was triggered by an automatic man overboard alarm signal, with AIS signal.\n\nRecommended Action:\nCoordinate search and rescue efforts using the recommended tools above.\n\nRationale:\nThe situation requires immediate attention due to the high priority distress message. Using tool_001 will help visualize the area where the crew members were last seen. Tool_002 is necessary for estimating survival time based on environmental conditions. Tool_004 will assist in predicting the location of the survivors, while tool_007 and tool_008 are essential for coordination with nearby vessels and authorities.\n\nConsiderations:\nVisibility is unknown, which could impact search efforts. The high wind speed (40 knots) may also affect drift calculations.\n\nContext:\nThe situation report provides crucial information about the incident, including position, time, number of persons involved, and conditions at the scene.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard\n\n[Source: IAMSAR-V3-2022.pdf - Page 35]\nF call sign or other identification \n F MMSI (if the initial alert has been sent by DSC) \n F position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)\n\n[Source: IAMSAR-V3-2022.pdf - Page 36]\nF position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)\n – number and type of survival craft launched\n\n[Source: IAMSAR-V2-2022.pdf - Page 269]\nAppendix D – Uncertainty phase data\nD-4 IAMSAR MANUAL VOLUME II (2022 EDITION)\nMan overboard (MOB) checklist\n1  Date/time of present position.\n2  Craft’s course/speed and destination.\n3  Date/time of man overboard position.\n4  Initial reporting source (parent agency, radio station, name/call sign of craft).\n5  Estimated water temperature.\n6  Person’s name, age, sex.\n7  Person’s physical condition and swimming capability.\n8  Person’s clothing amount and colour, including life preserver.\n\n[Source: IAMSAR-V2-2022.pdf - Page 314]\nDATE AND TIME (UTC or Local Date Time Group)\nFROM: (Originating RCC)\nTO:\nSAR SITREP (NUMBER) (To indicate nature of message and \ncompleteness of sequence of SITREPs \nconcerning the casualty)\nA. IDENTITY OF CASUALTY (Name/call sign, flag State)\nB. POSITION (Latitude/longitude)\nC. SITUATION (Type of message, e.g. distress/urgency; date/\ntime; nature of distress/urgency, e.g. fire, \ncollision, medico)\nD. NUMBER OF PERSONS\nE. ASSISTANCE REQUIRED\nF. COORDINATING RCC",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_002",
+      "tool_004",
+      "tool_007",
+      "tool_008"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_015",
+      "priority": "urgency",
+      "message_type": "SITREP",
+      "incident_type": "Ship wreckage sighted.",
+      "description": "Ship wreckage sighted on beach. Ship can not be seen from the beach.",
+      "position": "39°52'28\"N 8°58'23\"W (Portugal coast)",
+      "time": "20:15",
+      "persons_involved": null,
+      "vessel": null,
+      "conditions": {
+        "visibility": "15",
+        "sea_state": null,
+        "air_temp": "26",
+        "water_temp": null,
+        "wind": null
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_015', 'priority': 'urgency', 'message_type': 'SITREP', 'incident_type': 'Ship wreckage sighted.', 'description': 'Ship wreckage sighted on beach. Ship can not be seen from the beach.', 'position': '39°52\\'28\"N 8°58\\'23\"W (Portugal coast)', 'time': '20:15', 'persons_involved': None, 'vessel': None, 'conditions': {'visibility': '15', 'sea_state': None, 'air_temp': '26', 'water_temp': None, 'wind': None}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: To plot the wreckage location onto a map and visualize the search area.\n- tool_002: To estimate the survival time of potential survivors based on environmental conditions (visibility, air temperature).\n- tool_003: To generate a weather forecast for the search and rescue operations, which may impact the visibility and sea state.\n- tool_004: Not applicable in this case as there is no last known position or drift information provided.\n- tool_007: To retrieve real-time AIS data for nearby vessels to assist coordination and identify potential rescuers.\n- tool_008: To send emergency messages to relevant authorities or nearby vessels, if necessary.\n- tool_009: To check availability and ETA of SAR assets (e.g., helicopters, rescue boats) in the area.\n\nSituation Summary:\nA ship wreckage has been sighted on a beach in Portugal, but the ship itself cannot be seen from the beach. The priority is urgent, and the incident type is a ship wreckage sighting.\n\nRecommended Action:\nImmediately dispatch SAR assets to the location to assess the situation and search for potential survivors. Utilize nearby vessels and AIS data to assist in the coordination of the rescue efforts.\n\nRationale:\nThe situation requires immediate attention due to the urgency of the priority and the potential presence of survivors. By utilizing available tools, such as plotting the wreckage location onto a map, estimating survival time, generating a weather forecast, and retrieving real-time AIS data, SAR operators can optimize their response and increase the chances of a successful rescue.\n\nConsiderations:\nThe lack of information regarding persons involved, vessel description, and specific conditions (sea state, wind) may impact the effectiveness of the search and rescue operations. Additionally, the fact that the ship itself cannot be seen from the beach may indicate that it has sunk or is partially submerged, which could affect the search strategy.\n\nContext:\nThe provided SITREP follows a standardized format, similar to those used in maritime search and rescue operations. The tools recommended are based on the information available in the SITREP and aim to support SAR operators in responding effectively to the situation.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 237]\n2.  MSG NO: 00812 AUMCC REF: 2DD747073F81FE0\n3.  DETECTED AT: 28 APR 07 0920 UTC BY SARSAT S11\n4.  DETECTION FREQUENCY: 406.0278 MHz\n5.  COUNTRY OF BEACON REGISTRATION: 366/ USA\n6.  USER CLASS: NATIONAL LOCATION - PLB\n SERIAL NO: 167438\n7.  EMERGENCY CODE: NIL\n\n[Source: IAMSAR-V2-2022.pdf - Page 303]\nFor vessels  \nHull type              Superstructure  \nEngines/sails            Did engines sound normal   \nLocation             Direction   \nTurning?             Other vessels sighted  \nType  Description  Time  \n. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .\nWeather at time of sighting   \nRaining/snowing          Thunderstorm  \nWind/sea state  \nRemarks\n\n[Source: IAMSAR-V3-2022.pdf - Page 160]\nSection 12 – Searching\nIAMSAR MANUAL VOLUME III (2022 EDITION) 12-29\nText or meaning Code groups\nI have sighted survival craft in lat. _ long. _  \n(or bearing _ distance _ from me).\nGH\nI have located (or found) wreckage from the vessel/aircraft in \ndistress (position to be indicated if necessary by lat. _ \nand long._ or by bearing _ from specified place and \ndistance _ ).\nGL\nEstimated set and drift of survival craft is _ degrees and \n_ knots.\nFP\n\n[Source: IAMSAR-V3-2022.pdf - Page 20]\nposition provided, course and speed of vessels.\n\n[Source: IAMSAR-V2-2022.pdf - Page 407]\nA (References)\n1  SITUATION:\nA   SUMMARY: (A brief summary of the case, without repeating information previously provided to all \naddressees.)\nB   DESCRIPTION: (Description of the missing craft, e.g. MOTOR VESSEL, 150 METRES, BLACK HULL, \nWHITE SUPERSTRUCTURE AFT)\nC  PERSONS ON BOARD: (Number)\nD  SEARCH OBJECTS:\nPRIMARY:    (Description of the primary search object, e.g. 8-PERSON ORANGE LIFERAFT WITH \nCANOPY)",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_002",
+      "tool_003",
+      "tool_004",
+      "tool_007",
+      "tool_008",
+      "tool_009"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_016",
+      "priority": "distress",
+      "message_type": "SITREP",
+      "incident_type": "AIS man overboard signal received.",
+      "description": "AIS man overboard signal received from another vessel.",
+      "position": "58°39'23\"N 19°01'05\"E (Baltic sea)",
+      "time": "09:00",
+      "persons_involved": "1 person overboard.",
+      "vessel": null,
+      "conditions": {
+        "visibility": "5",
+        "sea_state": "5",
+        "air_temp": "10",
+        "water_temp": "11",
+        "wind": "25 knots"
+      },
+      "actions_taken": null,
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_016', 'priority': 'distress', 'message_type': 'SITREP', 'incident_type': 'AIS man overboard signal received.', 'description': 'AIS man overboard signal received from another vessel.', 'position': '58°39\\'23\"N 19°01\\'05\"E (Baltic sea)', 'time': '09:00', 'persons_involved': '1 person overboard.', 'vessel': None, 'conditions': {'visibility': '5', 'sea_state': '5', 'air_temp': '10', 'water_temp': '11', 'wind': '25 knots'}, 'actions_taken': None, 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: Plot the search pattern onto a map to visualize the search area.\n- tool_002: Calculate the estimated survival time of the person overboard based on water temperature and other environmental conditions.\n- tool_004: Calculate the location of the survivor based on last known position (AIS MOB signal) and drift, taking into account wind and sea state.\n- tool_007: Retrieve real-time AIS data for nearby vessels to assist coordination and identify potential rescuers.\n- tool_010: Estimate the probability of detecting the survivor based on search pattern, visibility, and sea state.\n\nSituation Summary:\nA person has fallen overboard from a vessel in the Baltic Sea. The incident was reported through an AIS MOB signal. Weather conditions are moderate with 5 miles visibility, sea state 5, air temperature at 10°C, water temperature at 11°C, and wind speed of 25 knots.\n\nRecommended Action:\nInitiate search and rescue operations immediately, using the calculated location and estimated survival time to guide the effort.\n\nRationale:\nThe AIS MOB signal provides a precise location for the start of the search. Calculating the estimated survival time helps prioritize the response, while estimating the probability of detection informs the effectiveness of the search pattern.\n\nConsiderations:\nWeather conditions are moderate but could worsen, affecting both the survivor's condition and the difficulty of the rescue operation. Nearby vessels should be alerted to assist if possible.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard\n\n[Source: IAMSAR-V2-2022.pdf - Page 73]\nway as AIS-SARTs \n – The sighting or reporting of an AIS-MOB signal may indicate that a person or persons \nactivated the device to draw attention to their location perhaps because of an emergency, \nfor example, a man overboard from a vessel or offshore installation. The AIS-MOB is \nprimarily intended to enable the vessel, craft or installation from which a person has \nfallen, to locate them and for other nearby vessels to be able to assist if necessary\n\n[Source: IAMSAR-V2-2022.pdf - Page 269]\nAppendix D – Uncertainty phase data\nD-4 IAMSAR MANUAL VOLUME II (2022 EDITION)\nMan overboard (MOB) checklist\n1  Date/time of present position.\n2  Craft’s course/speed and destination.\n3  Date/time of man overboard position.\n4  Initial reporting source (parent agency, radio station, name/call sign of craft).\n5  Estimated water temperature.\n6  Person’s name, age, sex.\n7  Person’s physical condition and swimming capability.\n8  Person’s clothing amount and colour, including life preserver.\n\n[Source: IAMSAR-V2-2022.pdf - Page 237]\n2.  MSG NO: 00812 AUMCC REF: 2DD747073F81FE0\n3.  DETECTED AT: 28 APR 07 0920 UTC BY SARSAT S11\n4.  DETECTION FREQUENCY: 406.0278 MHz\n5.  COUNTRY OF BEACON REGISTRATION: 366/ USA\n6.  USER CLASS: NATIONAL LOCATION - PLB\n SERIAL NO: 167438\n7.  EMERGENCY CODE: NIL\n\n[Source: IAMSAR-V3-2022.pdf - Page 35]\nF call sign or other identification \n F MMSI (if the initial alert has been sent by DSC) \n F position, given as latitude and longitude, or if this is not known or \nif time is insufficient, in relation to a known geographical location \n F nature of the distress \n F kind of assistance required \n F any other useful information; for example: \n – weather in immediate vicinity, wind direction, sea and swell, \nvisibility\n – time of abandoning ship\n – number of crew remaining on board (total/POB)",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_002",
+      "tool_004",
+      "tool_007"
+    ]
+  },
+  {
+    "query": {
+      "scenario_id": "SITREP_017",
+      "priority": "urgency",
+      "message_type": "SITREP",
+      "incident_type": "Motor death on yatch.",
+      "description": "Motor death on yatch, in contact via VHF. Has supplies to last 12 hours.",
+      "position": "36°03'58\"S 174°52'27\"E (Pacific ocean, 12 NM offshore)",
+      "time": "13:00",
+      "persons_involved": "4 passengers on board.",
+      "vessel": "Yacht",
+      "conditions": {
+        "visibility": "10",
+        "sea_state": "4",
+        "air_temp": "20",
+        "water_temp": "17",
+        "wind": "15 knots"
+      },
+      "actions_taken": "null",
+      "requested_assistance": null
+    },
+    "answer": "SITREP:\n{'scenario_id': 'SITREP_017', 'priority': 'urgency', 'message_type': 'SITREP', 'incident_type': 'Motor death on yatch.', 'description': 'Motor death on yatch, in contact via VHF. Has supplies to last 12 hours.', 'position': '36°03\\'58\"S 174°52\\'27\"E (Pacific ocean, 12 NM offshore)', 'time': '13:00', 'persons_involved': '4 passengers on board.', 'vessel': 'Yacht', 'conditions': {'visibility': '10', 'sea_state': '4', 'air_temp': '20', 'water_temp': '17', 'wind': '15 knots'}, 'actions_taken': 'null', 'requested_assistance': None}\n\nRecommended Tools:\n- tool_001: To plot the search pattern onto a map, which can help identify potential areas to focus on.\n- tool_007: To retrieve real-time AIS data for nearby vessels that may be able to assist in the rescue operation.\n- tool_009: To check availability and ETA of SAR assets such as helicopters or rescue boats.\n- tool_013: To estimate fuel usage for SAR vessels based on route and speed, helping plan the search and rescue efforts.\n\nSituation Summary:\nA yacht with 4 passengers on board has experienced motor failure in the Pacific Ocean, approximately 12 nautical miles offshore. The vessel is in contact via VHF radio and has enough supplies to last for about 12 hours. Weather conditions are moderate, with a sea state of 4, visibility of 10, air temperature at 20°C, water temperature at 17°C, and wind speed of 15 knots.\n\nRecommended Action:\nImmediate action should be taken to coordinate rescue efforts, utilizing nearby vessels (if available) or deploying SAR assets such as helicopters or rescue boats. The yacht's position should be plotted on a map to help plan the search pattern effectively.\n\nRationale:\nGiven the urgency of the situation and the limited time frame in which the survivors have supplies, it is crucial to act quickly. Using tools that provide real-time data and can aid in planning will optimize the chances of a successful rescue operation.\n\nConsiderations:\nWeather conditions should be closely monitored for any changes that could impact the rescue efforts or the safety of the survivors and rescuers. Effective communication with the yacht via VHF radio is key to coordinating actions from both sides efficiently.",
+    "context": "[Source: IAMSAR-V2-2022.pdf - Page 14]\nMOB ....................................................................................................................................man overboard\n\n[Source: IAMSAR-V3-2022.pdf - Page 20]\nposition provided, course and speed of vessels.\n\n[Source: IAMSAR-V2-2022.pdf - Page 407]\nA (References)\n1  SITUATION:\nA   SUMMARY: (A brief summary of the case, without repeating information previously provided to all \naddressees.)\nB   DESCRIPTION: (Description of the missing craft, e.g. MOTOR VESSEL, 150 METRES, BLACK HULL, \nWHITE SUPERSTRUCTURE AFT)\nC  PERSONS ON BOARD: (Number)\nD  SEARCH OBJECTS:\nPRIMARY:    (Description of the primary search object, e.g. 8-PERSON ORANGE LIFERAFT WITH \nCANOPY)\n\n[Source: IAMSAR-V2-2022.pdf - Page 408]\nA (References)\n1  SITUATION:\nA   SUMMARY: (A brief summary of the case, without repeating information previously provided to all \naddressees.)\nB   DESCRIPTION: (Description of the missing craft, e.g. MOTOR VESSEL, 150 METRES, BLACK HULL, \nWHITE SUPERSTRUCTURE AFT)\nC  PERSONS ON BOARD: (Number)\nD  SEARCH OBJECTS:\nPRIMARY:    (Description of the primary search object, e.g. 8-PERSON ORANGE LIFERAFT WITH \nCANOPY)\n\n[Source: IAMSAR-V2-2022.pdf - Page 237]\n2.  MSG NO: 00812 AUMCC REF: 2DD747073F81FE0\n3.  DETECTED AT: 28 APR 07 0920 UTC BY SARSAT S11\n4.  DETECTION FREQUENCY: 406.0278 MHz\n5.  COUNTRY OF BEACON REGISTRATION: 366/ USA\n6.  USER CLASS: NATIONAL LOCATION - PLB\n SERIAL NO: 167438\n7.  EMERGENCY CODE: NIL",
+    "tool_suggestions": [
+      "tool_001",
+      "tool_007",
+      "tool_009"
+    ]
+  }
+]

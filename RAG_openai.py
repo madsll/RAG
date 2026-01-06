@@ -1,13 +1,22 @@
 import faiss
 import json
 import re
-from sentence_transformers import SentenceTransformer
-import ollama
 import os
 import streamlit as st
+from openai import OpenAI
+import numpy as np
+import ollama
+from dotenv import load_dotenv
 
+# Initialize OpenAI client
+load_dotenv()
+api_key_get=os.getenv("OPENAI_API_KEY")
+
+client = OpenAI(
+api_key=api_key_get  
+)
 # Load FAISS index
-index = faiss.read_index("C:/Users/NX83SQ/Documents/GitHub/RAG/faiss_store/faiss_index_qwen4b.index")
+index = faiss.read_index("C:/Users/NX83SQ/Documents/GitHub/RAG/faiss_store/faiss_index_openai_large.index")
 
 # Load metadata from JSON
 with open("C:/Users/NX83SQ/Documents/GitHub/RAG/faiss_store/chunks_metadata.json", "r", encoding="utf-8") as f:
@@ -17,11 +26,16 @@ with open("C:/Users/NX83SQ/Documents/GitHub/RAG/faiss_store/chunks_metadata.json
 with open("C:/Users/NX83SQ/Documents/GitHub/RAG/tool_suggestions.json", "r", encoding="utf-8") as f:
     tools = json.load(f)
 
-# Load embedding model
-embedding_model = SentenceTransformer("Qwen/Qwen3-Embedding-4B")
+# Function to get OpenAI embeddings
+def get_embedding(text, model="text-embedding-3-large"):
+    response = client.embeddings.create(
+        model=model,
+        input=text
+    )
+    return np.array(response.data[0].embedding, dtype="float32")
 
 def retrieve_context(query, k=5):
-    query_vector = embedding_model.encode([query])
+    query_vector = np.array([get_embedding(query)])
     distances, indices = index.search(query_vector, k)
     results = []
     for i in indices[0]:
@@ -117,17 +131,8 @@ Answer:
 
     return answer, context, tool_suggestions
 
-
-
-# Streamlit UI
+# Streamlit UI / CLI
 if __name__ == "__main__":
-    
-    # st.set_page_config(layout="wide")
-
-    # col1, col2 = st.columns(2)
-
-    # with col2:
-    #     user_query = st.text_area("Prompt", height=200)
     user_query = input("Enter your query: ")
 
     if user_query.strip():
@@ -149,22 +154,3 @@ if __name__ == "__main__":
         print(tool_suggestions)
     else:
         print("Please enter a prompt.")
-
-    #     if "output_area" not in st.session_state:
-    #         st.session_state.output_area = ""
-    #     if "tool_suggestions" not in st.session_state:
-    #         st.session_state.tool_suggestions = ""
-
-    #     if st.button("Generate Answer"):
-    #         if user_query.strip():
-    #             answer, context, tool_suggestions = generate_response(user_query)
-    #             st.session_state.output_area = answer
-    #             st.session_state.tool_suggestions = tool_suggestions
-
-    #             with col1:
-    #                 st.text_area("Documents", value=context, height=475)
-
-    #             with col2:
-    #                 st.text_area("Recommended Tools", value=st.session_state.tool_suggestions, height=150)
-    #         else:
-    #             st.warning("Please enter a prompt.")

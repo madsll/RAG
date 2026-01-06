@@ -48,7 +48,7 @@ def remove_footer_lines(chunks: list) -> list:
 def embed_chunks(chunks: list, batch_size: int = 100) -> np.ndarray:
     """Generate embeddings using SentenceTransformer Qwen3-Embedding-4B in batches."""
     texts = [chunk.page_content for chunk in chunks]
-    model = SentenceTransformer("Qwen/Qwen3-Embedding-0.6B")
+    model = SentenceTransformer("Qwen/Qwen3-Embedding-4B")
     embeddings = model.encode(texts, batch_size=batch_size, convert_to_numpy=True)
     
     return embeddings.astype("float32")
@@ -59,7 +59,7 @@ def save_faiss_index_and_data(embeddings: np.ndarray, chunks: list, output_dir: 
     # Save FAISS index
     index = faiss.IndexFlatL2(embeddings.shape[1])
     index.add(embeddings)
-    faiss.write_index(index, str(output_dir / "faiss_index_qwen06b.index"))  # updated filename
+    faiss.write_index(index, str(output_dir / "faiss_index_openai_large.index"))  # updated filename
 
     # Save metadata and text chunks in JSON format
     data = []
